@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Account Created Successfully";
+}
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <section class="cus_list">
+        <div class="row">
+            <div class="col-sm-2 text-lg-left"><label>NOTE :</label></div>
+            <br />
+            <h4>
+                Your account has been successfully created. <br />
+                Check your mail for your acccount details to login.
+            </h4>
+            <br />
+            
+            <div class="col-sm-2">
+                <input type="submit" value="OK" class="btn btn-primary form-control" />
+            </div>
+          
+        </div>
+    </section>
+}
+
+<style>
+
+    section {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        margin: 5%;
+        background-color: rgb(198,199,198);
+        text-align: center;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        font-family: Roboto;
+    }
+
+    .form-control {
+        padding: 10px 24px;
+    }
+
+    .col-sm-2 text-lg-left {
+        font-size: 16px;
+        padding: 2px;
+    }
+
+    .content {
+        margin-top: 150px;
+    }
+
+    .btn {
+        background-color: #343434;
+        color: rgb(198,199,198);
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+        font-family: Roboto;
+    }
+
+        .btn :hover {
+            background-color: white;
+        }
+</style>
+
+

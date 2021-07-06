@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BOIFinalDBModelStoreContainer" CdmEntityContainer="BOIFinalDBEntities">
+    <EntitySetMapping Name="AccountMasters">
+      <EntityTypeMapping TypeName="BOIFinalDBModel.AccountMaster">
+        <MappingFragment StoreEntitySet="AccountMaster">
+          <ScalarProperty Name="AccNo" ColumnName="AccNo" />
+          <ScalarProperty Name="AccHolder" ColumnName="AccHolder" />
+          <ScalarProperty Name="IFSCCode" ColumnName="IFSCCode" />
+          <ScalarProperty Name="AccType" ColumnName="AccType" />
+          <ScalarProperty Name="AccOpenDate" ColumnName="AccOpenDate" />
+          <ScalarProperty Name="AccBalance" ColumnName="AccBalance" />
+          <ScalarProperty Name="AccStatus" ColumnName="AccStatus" />
+          <ScalarProperty Name="CustId" ColumnName="CustId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdminLogins">
+      <EntityTypeMapping TypeName="BOIFinalDBModel.AdminLogin">
+        <MappingFragment StoreEntitySet="AdminLogin">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Beneficiaries">
+      <EntityTypeMapping TypeName="BOIFinalDBModel.Beneficiary">
+        <MappingFragment StoreEntitySet="Beneficiary">
+          <ScalarProperty Name="AccNo" ColumnName="AccNo" />
+          <ScalarProperty Name="BenAccNo" ColumnName="BenAccNo" />
+          <ScalarProperty Name="BenName" ColumnName="BenName" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="BenBankName" ColumnName="BenBankName" />
+          <ScalarProperty Name="IFSCCode" ColumnName="IFSCCode" />
+          <ScalarProperty Name="BeneficiaryID" ColumnName="BeneficiaryID" />
+          <ScalarProperty Name="BeneficiaryType" ColumnName="BeneficiaryType" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BranchTables">
+      <EntityTypeMapping TypeName="BOIFinalDBModel.BranchTable">
+        <MappingFragment StoreEntitySet="BranchTable">
+          <ScalarProperty Name="IFSCCode" ColumnName="IFSCCode" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="BOIFinalDBModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+          <ScalarProperty Name="CustId" ColumnName="CustId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewAccs">
+      <EntityTypeMapping TypeName="BOIFinalDBModel.NewAcc">
+        <MappingFragment StoreEntitySet="NewAcc">
+          <ScalarProperty Name="CustId" ColumnName="CustId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Fname" ColumnName="Fname" />
+          <ScalarProperty Name="Lname" ColumnName="Lname" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PAN" ColumnName="PAN" />
+          <ScalarProperty Name="Aadhar" ColumnName="Aadhar" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="ResAdd" ColumnName="ResAdd" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="PerAdd" ColumnName="PerAdd" />
+          <ScalarProperty Name="PerAdd1" ColumnName="PerAdd1" />
+          <ScalarProperty Name="City01" ColumnName="City01" />
+          <ScalarProperty Name="pincode01" ColumnName="pincode01" />
+          <ScalarProperty Name="state01" ColumnName="state01" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="Income" ColumnName="Income" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransTables">
+      <EntityTypeMapping TypeName="BOIFinalDBModel.TransTable">
+        <MappingFragment StoreEntitySet="TransTable">
+          <ScalarProperty Name="AccNo" ColumnName="AccNo" />
+          <ScalarProperty Name="FromAccNo" ColumnName="FromAccNo" />
+          <ScalarProperty Name="ToAccNo" ColumnName="ToAccNo" />
+          <ScalarProperty Name="BeneficiaryID" ColumnName="BeneficiaryID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="TransDate" ColumnName="TransDate" />
+          <ScalarProperty Name="TransTime" ColumnName="TransTime" />
+          <ScalarProperty Name="TransType" ColumnName="TransType" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetAcStatement" FunctionName="BOIFinalDBModel.Store.GetAcStatement">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BOIFinalDBModel.GetAcStatement_Result">
+          <ScalarProperty Name="AccNo" ColumnName="AccNo" />
+          <ScalarProperty Name="AccHolder" ColumnName="AccHolder" />
+          <ScalarProperty Name="TransType" ColumnName="TransType" />
+          <ScalarProperty Name="TransDate" ColumnName="TransDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAcSummary" FunctionName="BOIFinalDBModel.Store.GetAcSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BOIFinalDBModel.GetAcSummary_Result">
+          <ScalarProperty Name="AccNo" ColumnName="AccNo" />
+          <ScalarProperty Name="AccType" ColumnName="AccType" />
+          <ScalarProperty Name="AccBalance" ColumnName="AccBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetBranchDetails" FunctionName="BOIFinalDBModel.Store.GetBranchDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BOIFinalDBModel.GetBranchDetails_Result">
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="IFSCCode" ColumnName="IFSCCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetEmail" FunctionName="BOIFinalDBModel.Store.GetEmail" />
+    <FunctionImportMapping FunctionImportName="GetEmail2" FunctionName="BOIFinalDBModel.Store.GetEmail2" />
+    <FunctionImportMapping FunctionImportName="LoginCheck" FunctionName="BOIFinalDBModel.Store.LoginCheck" />
+    <FunctionImportMapping FunctionImportName="MailingDet" FunctionName="BOIFinalDBModel.Store.MailingDet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BOIFinalDBModel.MailingDet_Result">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AccNo" ColumnName="AccNo" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TransDetails" FunctionName="BOIFinalDBModel.Store.TransDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BOIFinalDBModel.TransDetails_Result">
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="ToAccNo" ColumnName="ToAccNo" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="TransDate" ColumnName="TransDate" />
+          <ScalarProperty Name="TransTime" ColumnName="TransTime" />
+          <ScalarProperty Name="AccBalance" ColumnName="AccBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UpdatePwd" FunctionName="BOIFinalDBModel.Store.UpdatePwd" />
+    <FunctionImportMapping FunctionImportName="ValidIdVerify" FunctionName="BOIFinalDBModel.Store.ValidIdVerify" />
+    <FunctionImportMapping FunctionImportName="ViewCustomer_List" FunctionName="BOIFinalDBModel.Store.ViewCustomer_List">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BOIFinalDBModel.ViewCustomer_List_Result">
+          <ScalarProperty Name="Account_Number" ColumnName="Account_Number" />
+          <ScalarProperty Name="Account_Holder_Name" ColumnName="Account_Holder_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ViewUserDetails" FunctionName="BOIFinalDBModel.Store.ViewUserDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BOIFinalDBModel.ViewUserDetails_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PAN" ColumnName="PAN" />
+          <ScalarProperty Name="Aadhar" ColumnName="Aadhar" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="Income" ColumnName="Income" />
+          <ScalarProperty Name="Residential_Address" ColumnName="Residential_Address" />
+          <ScalarProperty Name="Permanent_Address" ColumnName="Permanent_Address" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,56 @@
+﻿
+
+@model onlineexam.Models.SessionModel
+@Scripts.Render("~/bundles/users")
+<div class="container">
+    <br /><br />
+    <div class="row">
+        <div class="col-md-6">
+            <h2>@ViewBag.TestName</h2>
+            @ViewBag.TestDescription
+        </div>
+        <div class="col-md-6">
+            @*Test Duration:@(ViewBag.TestDuration)minutes*@
+            <br />Total Question: @ViewBag.QuestionCount
+        </div>
+    </div>
+    <br /><br />
+    <div class="row">
+        <div class="col-md-12">
+            Before you begin,please read the following instructions carefully.
+        </div>
+    </div>
+
+    <h3>How to score more?</h3>
+    <ul>
+        <li>The test is used to evaluvate your expertise,creativity,productivity,knowledge and decision making technique</li>
+        <li>You may use resources available (like visual studio code etc.)</li>
+        <li> Do not use internet or external resources outside of the machine.</li>
+        <li>Remember that this is a test of experience, so do not be satisfied with One answer on descriptive type questions.</li>
+        <li>Negative markings are applied on multiple choice questions. The score deducted is based on percentage of error</li>
+    </ul>
+
+    <h3>How to use the application?</h3>
+    <ul>
+        <li>Your answers are not tracked unless you click on the <span class="highlight"><b> Save&next </b></span>button</li>
+        <li>Questions which has<b> Exercises </b>in them,use visual studio and write something like"completed/done/finish"etc</li>
+        <li>There is no <b> End </b> or <b> submit </b>button to end the evaluation,just walk out when you are done</li>
+     </ul>
+
+    <h3>Tips</h3>
+    <ul>
+        <li>Recommended that you review all the questions before you start answering them.This will help plan your effort time</li>
+        <li>Answer in a way that shows that you ae thinking and trying the best possible approach</li>
+    </ul>
+    @if (Model != null)
+    {
+        using (Html.BeginForm("Register", "Home", FormMethod.Post, new { @id = "formRegister" }))
+        {
+            @Html.HiddenFor(x => Model.TestId)
+            @Html.HiddenFor(x => Model.UserName)
+            @Html.HiddenFor(x => Model.Email)
+            @Html.HiddenFor(x => Model.Mobile_no)
+            <a href="javascript:void(0);" onclick="getElementById('formRegister').submit();" class="btn btn-primary"> Start Exam</a>
+        }
+    }
+</div>

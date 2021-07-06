@@ -1,0 +1,22 @@
+﻿
+@{ ViewBag.Title = "ApproveBidding";
+                Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<script>
+    function myFunction() {
+        alert("Bid Approved");
+    }
+
+</script>
+
+
+
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" value="Approve" onclick="myFunction()" class="btn btn-default" />
+        @ViewBag.m2
+    </div>
+</div>
+
+<h2>ApproveBidding</h2>
+

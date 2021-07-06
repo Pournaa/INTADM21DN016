@@ -1,0 +1,30 @@
+﻿@model IEnumerable<BankOfIntern.Models.ViewCustomer_List_Result>
+
+@Styles.Render("~/Content/css")
+<div class="link1"> <h3>Customer List</h3></div>
+<table class="table1">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Account_Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Account_Holder_Name)
+        </th>
+        <th></th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var item in Model.Where(item => item != null))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Account_Number)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Account_Holder_Name)
+                </td>
+            </tr>
+        }
+    }
+
+</table>

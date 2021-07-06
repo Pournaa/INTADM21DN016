@@ -1,0 +1,21 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Convert.ToBoolean(Session["UserId"]) == true)
+{
+    using (Html.BeginForm("Index", "Farmerhome", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+        @*<ul class="nav navbar-nav navbar-right">
+                <li>
+                    @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Logout", "Farmerhome", routeValues: null, htmlAttributes: new { title = "Manage" })
+                </li>
+                <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+            </ul>*@
+    }
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @Html.ActionLink("Logout " + User.Identity.GetUserName() + "!", "Logout", "Farmerhome")
+            </li>
+        </ul>
+            }
+

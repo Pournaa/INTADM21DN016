@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="D1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin_login">
+    <Key>
+      <PropertyRef Name="Admin_Id" />
+    </Key>
+    <Property Name="Admin_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Admin_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Admin_Email" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Confirm_Password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MVCregUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="F_name" Type="varchar" MaxLength="20" />
+    <Property Name="L_name" Type="varchar" MaxLength="20" />
+    <Property Name="MobileNo" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Dob" Type="datetime" />
+    <Property Name="Address1" Type="varchar" MaxLength="80" />
+    <Property Name="Address2" Type="varchar" MaxLength="80" />
+    <Property Name="City" Type="varchar" MaxLength="25" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="25" />
+    <Property Name="Pincode" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="occupation_table">
+    <Key>
+      <PropertyRef Name="Occ_ID" />
+    </Key>
+    <Property Name="Occ_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID" Type="int" />
+    <Property Name="Occ_type" Type="varchar" MaxLength="50" />
+    <Property Name="Designation" Type="varchar" MaxLength="80" />
+    <Property Name="Gross_income" Type="bigint" />
+    <Property Name="Adharcard_No" Type="bigint" />
+    <Property Name="Pancard_No" Type="nvarchar" MaxLength="20" />
+    <Property Name="Loan_amount" Type="bigint" />
+    <Property Name="Tensure" Type="int" />
+  </EntityType>
+  <EntityType Name="User_login">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_Name" Type="varchar" MaxLength="50" />
+    <Property Name="User_Email" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Confirm_Password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__occupation_t__ID__29572725">
+    <End Role="MVCregUser" Type="Self.MVCregUser" Multiplicity="0..1" />
+    <End Role="occupation_table" Type="Self.occupation_table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MVCregUser">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="occupation_table">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="D2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="loantrackeredit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="MobileNo" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="LoginCheck" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="User_Name" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="tracker3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="tracker4" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="D1ModelStoreContainer">
+    <EntitySet Name="Admin_login" EntityType="Self.Admin_login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MVCregUser" EntityType="Self.MVCregUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="occupation_table" EntityType="Self.occupation_table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_login" EntityType="Self.User_login" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__occupation_t__ID__29572725" Association="Self.FK__occupation_t__ID__29572725">
+      <End Role="MVCregUser" EntitySet="MVCregUser" />
+      <End Role="occupation_table" EntitySet="occupation_table" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

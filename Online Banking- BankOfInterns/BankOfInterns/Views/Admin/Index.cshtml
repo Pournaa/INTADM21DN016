@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+@{
+    Layout = null;
+}
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="header1">
+
+        @Html.ActionLink("Bank of Interns", "Index", "Home", null, new { @class = "header1", style = "color:rgb(198,199,198);text-decoration:none;text-align: left;font-weight:bold;font-size:30px; padding-top:20px;" })
+    </div>
+
+    <div class="content">
+        @using (Html.BeginForm())
+        {
+            <section class="cus_list">
+                <div class="row">
+                    <div class="col-sm-2 text-lg-left"><label>UserID</label></div>
+                    <br />
+                    <div class="inp">
+                        <input type="text" name="ID" class="form-control" maxlength="6" placeholder="Enter UserId" />
+                    </div>
+                    <br />
+                    @ViewBag.Message
+                    <div class="col-sm-2">
+                        <input type="submit" value="SUBMIT" class="btn btn-primary form-control" />
+                    </div>
+                </div>
+            </section>
+        }
+        <footer class="footer">
+            <p>
+                bankofinterns@gmail.com&nbsp;&nbsp;
+                <br />
+                &copy;Bank Of Interns&nbsp;&nbsp;
+                Singanallur,Coimbatore&nbsp;&nbsp;
+            </p>
+        </footer>
+
+        @using (Html.BeginForm("CustList", "Admin", FormMethod.Post))
+        {
+            <section class="cus_list">
+                <div class="row">
+                    <div class="col-sm-2 text-lg-left"><label>BranchName</label></div>
+                    <br />
+                    <div class="inp">
+                        <select name="branch" class="form-control" placeholder="Branch Name">
+                            <option value="Peelamedu"> Peelamedu</option>
+                            <option value="Pollachi"> Pollachi</option>
+                            <option value="Singanallur"> Singanallur</option>
+                            <option value="Sulur"> Sulur</option>
+                            <option value="Vadavalli"> Vadavalli</option>
+                        </select>
+                    </div>
+                    <br />
+                    <div class="col-sm-2">
+                        <input type="submit" value="SUBMIT" class="btn btn-primary form-control" />
+                    </div>
+                </div>
+            </section>
+        }
+    </div>
+
+
+    <style>
+        body {
+            width: 100%;
+            height: 400px;
+            background-color: rgb(198,199,198);
+            margin-top: 8%;
+        }
+
+        section {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            float: left;
+            margin: 5%;
+            background-color: rgb(198,199,198);
+            text-align: center;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            font-family: Roboto;
+        }
+
+        .form-control {
+            padding: 10px 24px;
+        }
+
+        .col-sm-2 text-lg-left {
+            font-size: 16px;
+            padding: 2px;
+        }
+
+        .content {
+            margin-top: 150px;
+        }
+
+        .btn {
+            background-color: #343434;
+            color: rgb(198,199,198);
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 16px;
+            font-family: Roboto;
+        }
+
+            .btn :hover {
+                background-color: white;
+            }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #343434;
+            color: white;
+            text-align: center;
+        }
+
+        .header1 {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 15%;
+            text-transform: uppercase;
+            background-image: url("Images/BOILogo.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-size: contain;
+            background-color: #343434;
+            color: white;
+            text-align: left;
+            font-family: "Roboto", sans-serif;
+            padding-left: 150px;
+        }
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿@model IEnumerable<BankOfIntern.Models.GetAcSummary_Result>
+@Session["uid"]
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="link1"> <h3>Account Summary</h3></div>
+
+    @{
+        string url = Url.Action("Logout", "Logout");
+    }
+    <input type="button" value="Logout" class="submit" onclick="window.location.href = '@url'" />
+
+    <div class="dropdown">
+        <button onclick="myFunc()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content" onclick="myFunc()">
+            @Html.ActionLink("Branch Details", "BranchDetails", new { id =Session["uid"] }) 
+            @Html.ActionLink("Account Statement", "AcStatement", new { id =Session["uid"] }) 
+            @Html.ActionLink("Account Summary", "AcSummary", new { id =Session["uid"] })
+            @Html.ActionLink("Transactions", "Trans", "Transaction", new { id = Session["uid"] },new {  })
+          
+        </div>
+    </div>
+
+    <table class="table1" border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AccNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccBalance)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @{
+                        long Account = Convert.ToInt64(item.AccNo);
+                    }
+                    @Html.DisplayFor(modelItem => Account)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccBalance)
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <script>
+        function myFunc() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.add('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+

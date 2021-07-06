@@ -1,0 +1,44 @@
+﻿
+@model BankOfIntern.Models.EnterOtp
+
+@{
+    ViewBag.Title = "EnterOtp";
+}
+
+@Styles.Render("~/Content/csnp")
+
+
+@using (Html.BeginForm("NewPwd", "ResetPassword", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <h3>Enter 4-digit OTP</h3>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.OTP, new { htmlAttributes = new { @class = "form-control", maxlength = "4", id = "partitioned" } })
+                @Html.ValidationMessageFor(model => model.OTP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group-2">
+            <label class="error">@Html.DisplayFor(model => model.OtpErrorMsg)</label>
+        </div>
+
+
+        <div class="form-group-1">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+
+@*@section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@
+
+

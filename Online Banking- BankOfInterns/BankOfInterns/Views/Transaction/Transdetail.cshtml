@@ -1,0 +1,183 @@
+﻿@model BankOfIntern.Models.TransDetails_Result
+
+@{
+    ViewBag.Title = "Transdetail";
+}
+
+@Styles.Render("~/Content/css")
+
+
+
+<div>
+    <div class="link1"> <h3>Transaction Details</h3></div>
+    <hr />
+    @{
+        string url = Url.Action("Logout", "Logout");
+    }
+    <input type="button" value="Logout" class="submit" onclick="window.location.href = '@url'" />
+    <div class="OT1">
+        <ul class="nav navbar-nav">
+            <li class=" @(ViewContext.RouteData.Values["Action"].ToString()=="Beneficiary"?"active":"" )">
+                @Html.ActionLink("Beneficiary", "Benifi", "Transaction", new { area = "" }, new { id = "OT1", style = "color:rgb(198,199,198);text-decoration:none;background-color: #343434;font-size:20px" })
+            </li>
+            <li class=" @(ViewContext.RouteData.Values["Action"].ToString()=="Transaction"?"active":"" )">
+                @Html.ActionLink("Transaction", "Trans", "Transaction", new { area = "" }, new { id = "OT1", style = "color:rgb(198,199,198);text-decoration:none;background-color: #343434;font-size:20px" })
+            </li>
+        </ul>
+    </div>
+    <h3>Your Transaction is successfull.</h3>
+    @*@if (Model != null)
+    {
+        <dl class="dl-horizontal">
+            <dt>
+
+                @Html.DisplayNameFor(model => model.TransactionID)
+            </dt>
+
+            <dd>
+                @{
+                    long TransId = Convert.ToInt64(Model.TransactionID);
+                }
+                @Html.DisplayFor(model => TransId)
+
+
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ToAccNo)
+            </dt>
+
+            <dd>
+                @{
+                    long Toaccno = Convert.ToInt64(Model.ToAccNo);
+                }
+                @Html.DisplayFor(model => Toaccno)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Amount)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Amount)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TransDate)
+            </dt>
+
+            <dd>
+
+                @{
+                    string tdate = (Model.TransDate).ToString();
+
+                }
+                @Html.DisplayFor(model => tdate)
+
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TransTime)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TransTime)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.AccBalance)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AccBalance)
+            </dd>
+
+        </dl>
+    }*@
+</div>
+<style>
+    .form-horizontal {
+        box-shadow: 0 6px 43px 0 rgba(0, 0, 0, 0.4);
+        border-radius: 2px 2px 2px 2px;
+        margin: auto;
+        max-width: 500px;
+        height: 430px;
+        padding: 100px;
+        background: #343434;
+        font-size: 20px;
+        background-size: 24px;
+        margin-top: 100px;
+        color: white;
+    }
+
+    .form-group input {
+        width: 4000%;
+        padding: 25px;
+        text-align: left;
+        background-color: rgb(237 231 237 / 0.16);
+        border: 0;
+        border-left: 2px solid #00c6d7;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        color: #fff;
+        outline: 0;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 13px;
+    }
+
+    .form-group-1 input {
+        background-color: cornflowerblue;
+        border: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 6px 2px 20px 0px;
+        cursor: pointer;
+        border-radius: 16px;
+        width: 135%;
+        margin-left: -54.5px;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    header {
+        height: 90px;
+        background: #343434;
+        width: 100%;
+        z-index: 10;
+        position: fixed;
+        top: -10px;
+    }
+
+    input[type=submit] {
+        background-color: rgb(198,199,198);
+        border: none;
+        color: #343434;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 50px;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 10%;
+        margin-right: 70%;
+    }
+
+    .button:hover {
+        background-color: #f1f1f1;
+    }
+</style>
+

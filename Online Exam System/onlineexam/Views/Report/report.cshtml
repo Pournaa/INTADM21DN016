@@ -1,0 +1,53 @@
+﻿@using System.Data;
+@{
+    ViewBag.Title = "report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<style>
+    body {
+        background-image: url('../../image/images new.jpg');
+        background-size:cover;
+    }
+</style>
+<body>
+   
+    <h3>Report</h3>
+    <table border="1">
+        <tr bgcolor="yellow">
+
+            <th> Registration Id</th>
+            <th>Question Id</th>
+            <th>Mark Scored</th>
+
+
+
+        </tr>
+        @foreach (DataRow row in Model.Rows)
+        {
+            <tr>
+
+                <td>@row["RegistrationId"]</td>
+                <td>@row["TestXQuestionId"]</td>
+                <td>@row["MarkScored"]</td>
+
+
+
+            </tr>
+        }
+    </table>
+
+</body>
+</html>
+
+
+

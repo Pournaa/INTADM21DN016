@@ -1,0 +1,312 @@
+﻿              
+  @{
+
+      ViewBag.Title = "Index";
+      Layout = "~/Views/Shared/_Layout.cshtml";
+
+   }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #fff;
+        font-family: 'Lato', sans-serif;
+    }
+
+    #page-wrapper {
+        position: relative;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    /** global classes styling **/
+    .logo {
+        float: left;
+        width: 100px;
+        height: 100px;
+        background: #555;
+    }
+
+    .container {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .btn {
+        padding: 0 20px;
+        height: 40px;
+        font-size: 1em;
+        font-weight: 900;
+        text-transform: uppercase;
+        border: 3px black solid;
+        border-radius: 2px;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .grid {
+        display: flex;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        min-height: 75px;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #eee;
+    }
+
+    nav {
+        font-weight: 400;
+    }
+
+        nav li {
+            padding-bottom: 5px;
+        }
+
+    }
+
+    nav ul {
+        width: 71vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+        margin-top: 50px;
+    }
+
+        #hero h2 {
+            margin-bottom: 20px;
+            word-wrap: break-word;
+        }
+
+        #hero input[type="email"] {
+            max-width: 275px;
+            width: 100%;
+            padding: 5px;
+        }
+
+        #hero input[type="submit"] {
+            max-width: 150px;
+            width: 100%;
+            height: 30px;
+            margin: 15px 0;
+            border: 0;
+            background-color: #00BCD4;
+        }
+
+            #hero input[type="submit"]:hover {
+                background-color: #E57373;
+                transition: background-color 1s;
+            }
+
+    #services {
+        margin-top: 30px;
+    }
+
+        #services .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 125px;
+            width: 20vw;
+            color: darkorange;
+        }
+
+        #services .desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 125px;
+            width: 80vw;
+            padding: 5px;
+        }
+
+    #how-it-works {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+        #how-it-works iframe {
+            max-width: 560px;
+            width: 100%;
+        }
+
+    #rate {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+        #rate #acustic, #rate #bass, #rate #electric {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: calc(100% / 3);
+            margin: 10px;
+            border: 1px solid #000;
+            border-radius: 3px;
+        }
+
+            #rate #acustic .level, #rate #bass .level, #rate #electric .level {
+                background-color: #FDD835;
+                color: black;
+                padding: 15px 0;
+                width: 100%;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            #rate #acustic h2, #rate #bass h2, #rate #electric h2 {
+                margin-top: 15px;
+            }
+
+            #rate #acustic ol, #rate #bass ol, #rate #electric ol {
+                margin: 15px 0;
+            }
+
+                #rate #acustic ol li, #rate #bass ol li, #rate #electric ol li {
+                    padding: 5px 0;
+                }
+
+            #rate #acustic button, #rate #bass button, #rate #electric button {
+                border: 1;
+                margin: 15px 0;
+                background-color: #0091EA;
+                font-weight: 800;
+            }
+
+                #rate #acustic button:hover, #rate #bass button:hover, #rate #electric button:hover {
+                    background-color: #FFEE58;
+                    transition: background-color 1s;
+                }
+
+        #rate #acustic, #rate #bass, #rate #electric {
+            max-width: 300px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    footer {
+        margin-top: 30px;
+        background-color: #ddd;
+        padding: 20px;
+    }
+
+        footer ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+            footer ul li {
+                padding: 0 10px;
+            }
+
+        footer span {
+            margin-top: 5px;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 0.9em;
+            color: #444;
+        }
+</style>
+<br/>
+<br />
+<br />
+<br />
+
+
+<body>
+    <!-- about breadcrumb -->
+    <section class="w3l-about-breadcrumb text-left">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+            <div class="container">
+                <h2 class="title">Services</h2>
+                <ul class="breadcrumbs-custom-path mt-2">
+                    <li><a href="#url">Home</a></li>
+                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Services </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //about breadcrumb -->
+    <br />
+    <br />
+    <section id="rate">
+        <div id="acustic">
+            <div class="level">
+                Add Sell Request
+            </div>
+            <a href="@Url.Action("AddSellRequest", "Farmer", new { @class = "btn btn-style btn-secondary btn-contact" })">
+                @*<img src="~/FarmerImages/sol.png" />*@
+                <img src="~/FarmerImages/sellcrop.png" class="img11" />
+                <br /><br />
+        </div>
+        <div id="acustic">
+            <div class="level">
+                ViewSoldHistory
+            </div>
+            <a href="@Url.Action("ViewSoldhistory", "Farmer", new {@class = " btn btn-style btn-secondary btn-contact" })">
+                @*<img src="~/FarmerImages/sol.pngViewSoldhistory" />*@
+                <img src="~/FarmerImages/sellcrop.png" class="img11" />
+                <br /><br />
+</div>
+        <div id="acustic">
+            <div class="level">
+                Market Place
+            </div>
+            <a href="@Url.Action("ViewMarketplace", "Farmer", new { @class = "btn btn-style btn-secondary btn-contact" })">
+                @*<img src="~/FarmerImages/sol.png" />*@
+                <img src="~/FarmerImages/sellcrop.png" class="img11" />
+                <br /><br />
+        </div>
+        <div id="acustic">
+            <div class="level">
+                Farmer Details
+            </div>
+            <a href="@Url.Action("FarDetails", "Farmer", new { @class = "btn btn-style btn-secondary btn-contact" })">
+                @*<img src="~/FarmerImages/sol.png" />*@
+                <img src="~/FarmerImages/sellcrop.png" class="img11" />
+                <br /><br />
+        </div>
+    </section>
+</body>
+                    
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+﻿.form-horizontal {
+    box-shadow: 0 6px 43px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 2px 2px 2px 2px;
+    margin: auto;
+    max-width: 500px;
+    height: 400px;
+    padding: 100px;
+    background: #343434;
+    font-size: 20px;
+    background-size: 24px;
+    margin-top: 100px;
+    color: white;
+}
+
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(237 231 237 / 0.16);
+    border: 0;
+    font-size: 14px;
+    color: #fff;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 46.5px;
+}
+
+.form-group-1 input {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 50%;
+    margin-left: 27px;
+}
+
+
+.button:hover {
+    background-color: #f1f1f1;
+}
+
+
+h3 {
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+#partitioned {
+    padding-left: 15px;
+    letter-spacing: 42px;
+    border: 0;
+    background-image: linear-gradient(to left, black 35%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 50px 1px;
+    background-repeat: repeat-x;
+    background-position-x: 35px;
+    width: 200px;
+}
+
+

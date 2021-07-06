@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ProjectBusss.Models.Bus>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BusName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type_AC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type_Sleeper)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type_AC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type_Sleeper)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.BusId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.BusId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.BusId })
+        </td>
+    </tr>
+}
+
+</table>

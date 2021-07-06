@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BOIFinalDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AccountMaster">
+    <Key>
+      <PropertyRef Name="AccNo" />
+    </Key>
+    <Property Name="AccNo" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AccHolder" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IFSCCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AccType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="AccOpenDate" Type="DateTime" Precision="0" />
+    <Property Name="AccBalance" Type="Int32" Nullable="false" />
+    <Property Name="AccStatus" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CustId" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="NewAcc" Relationship="Self.FK__AccountMa__CustI__2E1BDC42" FromRole="AccountMaster" ToRole="NewAcc" />
+    <NavigationProperty Name="BranchTable" Relationship="Self.FK__AccountMa__IFSCC__2D27B809" FromRole="AccountMaster" ToRole="BranchTable" />
+    <NavigationProperty Name="Beneficiaries" Relationship="Self.FK__Beneficia__AccNo__30F848ED" FromRole="AccountMaster" ToRole="Beneficiary" />
+    <NavigationProperty Name="TransTables" Relationship="Self.FK__TransTabl__Remar__33D4B598" FromRole="AccountMaster" ToRole="TransTable" />
+  </EntityType>
+  <EntityType Name="AdminLogin">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Pwd" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Beneficiary">
+    <Key>
+      <PropertyRef Name="BeneficiaryID" />
+    </Key>
+    <Property Name="AccNo" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BenAccNo" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BenName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NickName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BenBankName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IFSCCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BeneficiaryID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BeneficiaryType" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AccountMaster" Relationship="Self.FK__Beneficia__AccNo__30F848ED" FromRole="Beneficiary" ToRole="AccountMaster" />
+    <NavigationProperty Name="TransTables" Relationship="Self.FK__TransTabl__Benef__34C8D9D1" FromRole="Beneficiary" ToRole="TransTable" />
+  </EntityType>
+  <EntityType Name="BranchTable">
+    <Key>
+      <PropertyRef Name="IFSCCode" />
+    </Key>
+    <Property Name="IFSCCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BranchName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BranchCode" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="AccountMasters" Relationship="Self.FK__AccountMa__IFSCC__2D27B809" FromRole="BranchTable" ToRole="AccountMaster" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Pwd" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CustId" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="NewAcc" Relationship="Self.FK__Login__CustId__286302EC" FromRole="Login" ToRole="NewAcc" />
+  </EntityType>
+  <EntityType Name="NewAcc">
+    <Key>
+      <PropertyRef Name="CustId" />
+    </Key>
+    <Property Name="CustId" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Lname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Phone" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PAN" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Aadhar" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ResAdd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BranchName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pincode" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PerAdd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PerAdd1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City01" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pincode01" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="state01" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Occupation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Income" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="AccountMasters" Relationship="Self.FK__AccountMa__CustI__2E1BDC42" FromRole="NewAcc" ToRole="AccountMaster" />
+    <NavigationProperty Name="Logins" Relationship="Self.FK__Login__CustId__286302EC" FromRole="NewAcc" ToRole="Login" />
+  </EntityType>
+  <EntityType Name="TransTable">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="AccNo" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="FromAccNo" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ToAccNo" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="BeneficiaryID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Amount" Type="Decimal" Precision="10" Scale="4" />
+    <Property Name="TransDate" Type="DateTime" Precision="0" />
+    <Property Name="TransTime" Type="Time" Precision="7" />
+    <Property Name="TransType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TransactionID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AccountMaster" Relationship="Self.FK__TransTabl__Remar__33D4B598" FromRole="TransTable" ToRole="AccountMaster" />
+    <NavigationProperty Name="Beneficiary" Relationship="Self.FK__TransTabl__Benef__34C8D9D1" FromRole="TransTable" ToRole="Beneficiary" />
+  </EntityType>
+  <Association Name="FK__AccountMa__CustI__2E1BDC42">
+    <End Role="NewAcc" Type="Self.NewAcc" Multiplicity="1" />
+    <End Role="AccountMaster" Type="Self.AccountMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewAcc">
+        <PropertyRef Name="CustId" />
+      </Principal>
+      <Dependent Role="AccountMaster">
+        <PropertyRef Name="CustId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AccountMa__IFSCC__2D27B809">
+    <End Role="BranchTable" Type="Self.BranchTable" Multiplicity="1" />
+    <End Role="AccountMaster" Type="Self.AccountMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BranchTable">
+        <PropertyRef Name="IFSCCode" />
+      </Principal>
+      <Dependent Role="AccountMaster">
+        <PropertyRef Name="IFSCCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Beneficia__AccNo__30F848ED">
+    <End Role="AccountMaster" Type="Self.AccountMaster" Multiplicity="1" />
+    <End Role="Beneficiary" Type="Self.Beneficiary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountMaster">
+        <PropertyRef Name="AccNo" />
+      </Principal>
+      <Dependent Role="Beneficiary">
+        <PropertyRef Name="AccNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TransTabl__Remar__33D4B598">
+    <End Role="AccountMaster" Type="Self.AccountMaster" Multiplicity="0..1" />
+    <End Role="TransTable" Type="Self.TransTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountMaster">
+        <PropertyRef Name="AccNo" />
+      </Principal>
+      <Dependent Role="TransTable">
+        <PropertyRef Name="AccNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TransTabl__Benef__34C8D9D1">
+    <End Role="Beneficiary" Type="Self.Beneficiary" Multiplicity="0..1" />
+    <End Role="TransTable" Type="Self.TransTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Beneficiary">
+        <PropertyRef Name="BeneficiaryID" />
+      </Principal>
+      <Dependent Role="TransTable">
+        <PropertyRef Name="BeneficiaryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Login__CustId__286302EC">
+    <End Role="NewAcc" Type="Self.NewAcc" Multiplicity="1" />
+    <End Role="Login" Type="Self.Login" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewAcc">
+        <PropertyRef Name="CustId" />
+      </Principal>
+      <Dependent Role="Login">
+        <PropertyRef Name="CustId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BOIFinalDBEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AccountMasters" EntityType="Self.AccountMaster" />
+    <EntitySet Name="AdminLogins" EntityType="Self.AdminLogin" />
+    <EntitySet Name="Beneficiaries" EntityType="Self.Beneficiary" />
+    <EntitySet Name="BranchTables" EntityType="Self.BranchTable" />
+    <EntitySet Name="Logins" EntityType="Self.Login" />
+    <EntitySet Name="NewAccs" EntityType="Self.NewAcc" />
+    <EntitySet Name="TransTables" EntityType="Self.TransTable" />
+    <AssociationSet Name="FK__AccountMa__CustI__2E1BDC42" Association="Self.FK__AccountMa__CustI__2E1BDC42">
+      <End Role="NewAcc" EntitySet="NewAccs" />
+      <End Role="AccountMaster" EntitySet="AccountMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AccountMa__IFSCC__2D27B809" Association="Self.FK__AccountMa__IFSCC__2D27B809">
+      <End Role="BranchTable" EntitySet="BranchTables" />
+      <End Role="AccountMaster" EntitySet="AccountMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Beneficia__AccNo__30F848ED" Association="Self.FK__Beneficia__AccNo__30F848ED">
+      <End Role="AccountMaster" EntitySet="AccountMasters" />
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TransTabl__Remar__33D4B598" Association="Self.FK__TransTabl__Remar__33D4B598">
+      <End Role="AccountMaster" EntitySet="AccountMasters" />
+      <End Role="TransTable" EntitySet="TransTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TransTabl__Benef__34C8D9D1" Association="Self.FK__TransTabl__Benef__34C8D9D1">
+      <End Role="Beneficiary" EntitySet="Beneficiaries" />
+      <End Role="TransTable" EntitySet="TransTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Login__CustId__286302EC" Association="Self.FK__Login__CustId__286302EC">
+      <End Role="NewAcc" EntitySet="NewAccs" />
+      <End Role="Login" EntitySet="Logins" />
+    </AssociationSet>
+    <FunctionImport Name="GetAcStatement" ReturnType="Collection(BOIFinalDBModel.GetAcStatement_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="TransDate1" Mode="In" Type="DateTime" />
+      <Parameter Name="TransDate2" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="GetAcSummary" ReturnType="Collection(BOIFinalDBModel.GetAcSummary_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GetBranchDetails" ReturnType="Collection(BOIFinalDBModel.GetBranchDetails_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GetEmail" ReturnType="Collection(String)">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GetEmail2" ReturnType="Collection(String)">
+      <Parameter Name="AccNo" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="LoginCheck" ReturnType="Collection(Int32)">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="Pwd" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="MailingDet" ReturnType="Collection(BOIFinalDBModel.MailingDet_Result)" />
+    <FunctionImport Name="TransDetails" ReturnType="Collection(BOIFinalDBModel.TransDetails_Result)" />
+    <FunctionImport Name="UpdatePwd">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+      <Parameter Name="newpwd" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ValidIdVerify" ReturnType="Collection(Decimal)">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="ViewCustomer_List" ReturnType="Collection(BOIFinalDBModel.ViewCustomer_List_Result)">
+      <Parameter Name="BranchName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ViewUserDetails" ReturnType="Collection(BOIFinalDBModel.ViewUserDetails_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Decimal" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GetAcStatement_Result">
+    <Property Type="Decimal" Name="AccNo" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="AccHolder" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="TransType" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="TransDate" Nullable="true" />
+    <Property Type="Decimal" Name="Amount" Nullable="true" Precision="10" />
+  </ComplexType>
+  <ComplexType Name="GetAcSummary_Result">
+    <Property Type="Decimal" Name="AccNo" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="AccType" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="AccBalance" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetBranchDetails_Result">
+    <Property Type="String" Name="BranchName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="IFSCCode" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="MailingDet_Result">
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="AccNo" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="UserId" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="Pwd" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="TransDetails_Result">
+    <Property Type="Decimal" Name="TransactionID" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="ToAccNo" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="Amount" Nullable="true" Precision="10" />
+    <Property Type="DateTime" Name="TransDate" Nullable="true" />
+    <Property Type="Time" Name="TransTime" Nullable="true" />
+    <Property Type="Int32" Name="AccBalance" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="ViewCustomer_List_Result">
+    <Property Type="Decimal" Name="Account_Number" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="Account_Holder_Name" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="ViewUserDetails_Result">
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="113" />
+    <Property Type="DateTime" Name="DOB" Nullable="false" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="10" />
+    <Property Type="Decimal" Name="Phone" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PAN" Nullable="false" MaxLength="20" />
+    <Property Type="Decimal" Name="Aadhar" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="Occupation" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="Income" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="Residential_Address" Nullable="true" MaxLength="258" />
+    <Property Type="String" Name="Permanent_Address" Nullable="true" MaxLength="258" />
+  </ComplexType>
+</Schema>

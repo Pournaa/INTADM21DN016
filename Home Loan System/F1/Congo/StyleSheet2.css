@@ -1,0 +1,251 @@
+﻿svg {
+    width: 100px;
+    display: block;
+    margin: 40px auto 0;
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    &.circle
+
+{
+    -webkit-animation: dash .9s ease-in-out;
+    animation: dash .9s ease-in-out;
+}
+
+&.line {
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash .9s .35s ease-in-out forwards;
+    animation: dash .9s .35s ease-in-out forwards;
+}
+
+&.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+    animation: dash-check .9s .35s ease-in-out forwards;
+}
+
+}
+
+p {
+    text-align: center;
+    margin: 20px 0 60px;
+    font-size: 1.25em;
+    &.success
+
+{
+    color: #73AF55;
+}
+
+&.error {
+    color: #D06079;
+}
+
+}
+
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 900;
+    }
+}
+
+@keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 900;
+    }
+}
+/*@import url(https://fonts.googleapis.com/css?family=Almendra);
+
+$body-back:#2ecc71;
+$cross-color:#c0392b;
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+body {
+    background-color: $body-back;
+    font-family: 'Almendra', serif;
+}
+
+h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.cross-icon {
+    width: 80px;
+    height: 80px;
+    border: 4px solid $cross-color;
+    @include border-radius(50%);
+    margin: 50px auto;
+    padding: 0;
+    position: relative;
+    box-sizing: content-box;
+    &.cross-delete .cross-x-mark
+
+{
+    position: relative;
+    display: block;
+}
+
+&.cross-delete .cross-delete-line {
+    position: absolute;
+    height: 5px;
+    width: 47px;
+    background-color: $cross-color;
+    display: block;
+    top: 37px;
+    border-radius: 2px;
+}
+
+    &.cross-delete .cross-delete-line.cross-delete-left {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        left: 17px;
+    }
+
+    &.cross-delete .cross-delete-line.cross-delete-right {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        right: 16px;
+    }*/
+    /* The icons are not animated in IE. */
+    /*&.cross-delete .cross-delete-line.cross-delete-left {
+        -ms-transform: rotate(45deg) \9;
+    }
+
+    &.cross-delete .cross-delete-line.cross-delete-right {
+        -ms-transform: rotate(-45deg) \9;
+    }
+
+}
+
+@-webkit-keyframes animateDeleteIcon {
+    0% {
+        transform: rotateX(100deg);
+        -webkit-transform: rotateX(100deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes animateDeleteIcon {
+    0% {
+        transform: rotateX(100deg);
+        -webkit-transform: rotateX(100deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+.animateDeleteIcon {
+    -webkit-animation: animateDeleteIcon 0.5s;
+    animation: animateDeleteIcon 0.5s;
+}
+
+@-webkit-keyframes animateXMark {
+    0% {
+        transform: scale(0.4);
+        -webkit-transform: scale(0.4);
+        margin-top: 26px;
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(0.4);
+        -webkit-transform: scale(0.4);
+        margin-top: 26px;
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        margin-top: -6px;
+    }
+
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animateXMark {
+    0% {
+        transform: scale(0.4);
+        -webkit-transform: scale(0.4);
+        margin-top: 26px;
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(0.4);
+        -webkit-transform: scale(0.4);
+        margin-top: 26px;
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        margin-top: -6px;
+    }
+
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+.animateXMark {
+    -webkit-animation: animateXMark 0.5s;
+    animation: animateXMark 0.5s;
+}*/

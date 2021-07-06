@@ -1,0 +1,251 @@
+﻿<meta name="viewport" content="width=device-width" / >
+<title > Login</title >
+<style >
+-->
+#login-div {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    border-style: outset;
+    border-width: 7px;
+    border-color: coral;
+    padding: 20px 20px;
+    background-color: white;
+}
+
+#login-btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    padding: 2px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(38, 189, 103);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    background-image: url();
+    background-repeat: no-repeat;
+    /* background-image: url('../../images/back.jpeg');*/
+
+    background-image: url('../../Photos/home2.jpeg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    height: 740px;
+    border: none;
+}
+
+td {
+    padding: 5px;
+}
+
+.field-validation-error {
+    color: red;
+}
+
+.forgot-password {
+    text-align: center;
+    float: right;
+    font-size: 15px;
+    padding: 10px;
+    padding-right: 120px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+a {
+    color: deepskyblue;
+    display: inline-block;
+}
+
+button {
+    padding: 2px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+footer {
+	background-color: #232323;
+	padding: 80px 0px;
+	color: #fff;
+}
+
+footer h4 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 0.25px;
+	margin-bottom: 35px;
+}
+footer p {
+	color: #fff;
+}
+
+footer ul.social-icons {
+	margin-top: 25px;
+}
+
+footer ul.social-icons li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+footer ul.social-icons li:last-child {
+	margin-right: 0px;
+}
+
+footer ul.social-icons li a {
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	line-height: 34px;
+	text-align: center;
+	background-color: #fff;
+	color: #232323;
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+
+footer ul.social-icons li a:hover {
+	background-color: #a4c639;
+}
+
+footer ul.menu-list li {
+	margin-bottom: 13px;
+}
+
+footer ul.menu-list li:last-child {
+	margin-bottom: 0px;
+}
+
+footer ul.menu-list li a {
+	font-size: 14px;
+	color: #fff;
+	transition: all 0.3s;
+}
+
+footer ul.menu-list li a:hover {
+	color: #a4c639;
+}
+
+footer .contact-form input {
+	border-radius: 20px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	padding: 0px 15px;
+	color: #aaa!important;
+	background-color: #343434;
+	font-size: 13px;
+	text-transform: none;
+	box-shadow: none;
+	border: none;
+	margin-bottom: 15px;
+}
+
+footer .contact-form input:focus {
+	outline: none;
+	box-shadow: none;
+	border: none;
+	background-color: #343434;
+}
+
+footer .contact-form textarea {
+	border-radius: 20px;
+	height: 120px;
+	max-height: 200px;
+	min-height: 120px;
+	display: inline-block;
+	padding: 15px;
+	color: #aaa!important;
+	background-color: #343434;
+	font-size: 13px;
+	text-transform: none;
+	box-shadow: none;
+	border: none;
+	margin-bottom: 15px;
+}
+
+footer .contact-form textarea:focus {
+	outline: none;
+	box-shadow: none;
+	border: none;
+	background-color: #343434;
+}
+
+footer .contact-form ::-webkit-input-placeholder { /* Edge */
+  color: #aaa;
+}
+footer .contact-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #aaa;
+}
+footer .contact-form ::placeholder {
+  color: #aaa;
+}
+
+footer .contact-form button.filled-button {
+	background-color: transparent;
+	color: #fff;
+	background-color: #a4c639;
+	border: none;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 12px 30px;
+	border-radius: 30px;
+	display: inline-block;
+	transition: all 0.3s;
+	outline: none;
+	box-shadow: none;
+	text-shadow: none;
+	cursor: pointer;
+}
+
+footer .contact-form button.filled-button:hover {
+	background-color: #fff;
+	color: #a4c639;
+}
+
+
+
+/* Sub-footer Style */
+
+.sub-footer {
+	background-color: #343434;
+	text-align: center;
+	padding: 25px 0px;
+}
+
+.sub-footer p {
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+}
+
+.sub-footer a {
+	color: #fff;
+}
+
+
+footer {
+    padding: 80px 0px 20px 0px;
+}
+
+    footer .footer-item {
+        border-bottom: 1px solid #343434;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    footer .last-item {
+        border-bottom: none;
+    }
+
+</style >

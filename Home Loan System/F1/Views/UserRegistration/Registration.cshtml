@@ -1,0 +1,195 @@
+﻿@model F1.Models.MVCregUser
+
+@{
+    ViewBag.Title = "Registration1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+
+    <link href="~/Usertemp/style.css" rel="stylesheet" />
+  
+</head>
+</head>
+<body>
+    <div class="Online-Exam" style="margin-top : 10%">
+
+        <h1>Registration</h1>
+    </div>
+    <div class="container">
+        <div class="agile-form">
+            <form action="Registration" method="post">
+                <ul class="field-list">
+                    <li>
+                        <label class="form-label">
+                            First Name
+                            <span class="form-required"> * </span>
+                        </label>
+                        <div class="form-input">
+
+                            @Html.EditorFor(model => model.F_name, new { htmlAttributes = new { @type = "text", @name = "F_name", @placeholder = " ", @required = " " } })
+                            <br />
+                            @Html.ValidationMessageFor(model => model.F_name, "", new { @class = "text-danger" })
+                        </div>
+                    </li>
+                    <li>
+                        <label class="form-label">
+                            Last Name
+                            <span class="form-required"> * </span>
+                        </label>
+                        <div class="form-input">
+
+                            @Html.EditorFor(model => model.L_name, new { htmlAttributes = new { @type = "text", @name = "L_name", @placeholder = " ", @required = " " } })
+                            <br />
+                            @Html.ValidationMessageFor(model => model.L_name, "", new { @class = "text-danger" })
+                        </div>
+                    </li>
+                    <li>
+                        <label class="form-label">
+                            Mobile Number
+                            <span class="form-required"> * </span>
+                        </label>
+                        <div class="form-input">
+
+                            @Html.EditorFor(model => model.MobileNo, new { htmlAttributes = new { @type = "text", @name = "MobileNo", @max="10",@min="10", @placeholder = "", @required = " " } })
+                            <br />
+                            @Html.ValidationMessageFor(model => model.MobileNo, "", new { @class = "text-danger" })
+                        </div>
+                    </li>
+                    <li>
+                        <label class="form-label">
+                            Email
+
+                            <span class="form-required"> * </span>
+                        </label>
+                        <div class="form-input">
+
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @type = "email", @name = "Email", @placeholder = "", @required = " " } })
+                            <br />
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+
+                        </div>
+                    </li>
+
+
+
+                    <li>
+                        <label class="form-label">
+                            Date of Birth
+                            <span class="form-required"> * </span>
+                        </label>
+
+                        <div class="form-input">
+
+                            @Html.EditorFor(model => model.Dob, new { htmlAttributes = new { @type = "date", @name = "DOB", @placeholder = " ", @required = " " } })
+                            <br />
+                            @Html.ValidationMessageFor(model => model.Dob, "", new { @class = "text-danger" })
+
+                        </div>
+
+                    </li>
+
+
+                    <li>
+                        <label class="form-label">
+                            Address1
+                            <span class="form-required"> * </span>
+                        </label>
+                        <div class="form-input">
+
+                            @Html.EditorFor(model => model.Address1, "", new { htmlAttributes = new { @type = "text", @name = "Address1", @placeholder = "", @required = " " } })
+                            <br />
+                            @Html.ValidationMessageFor(model => model.Address1, "", new { @class = "text-danger" })
+
+                        </div>
+                    </li>
+                    <li>
+                        <label class="form-label">
+                            Address2
+                            <span class="form-required"> * </span>
+                        </label>
+                        <div class="form-input">
+
+                            @Html.EditorFor(model => model.Address2, "", new { htmlAttributes = new { @type = "text", @name = "Address2", @placeholder = "", @required = " ", @class = "expand" } })
+                            <br />
+                            @Html.ValidationMessageFor(model => model.Address2, "", new { @class = "text-danger" })
+                        </div>
+                    </li>
+                 
+                    <li>
+                        <label class="form-label">
+                            City
+                            <span class="form-required"> * </span>
+                        </label>
+                        <div class="form-input">
+                            @Html.EditorFor(model => model.City, new { htmlAttributes = new { @type = "text", @name = "city", @placeholder = " ", @required = " " } })
+                            <br />
+                            @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                        </div>
+                    </li>
+                    <li>
+                        <label class="form-label">
+                            State
+                            <span class="form-required"> * </span>
+                        </label>
+                        <div class="form-input">
+                            @Html.EditorFor(model => model.State, new { htmlAttributes = new { @type = "text", @name = "State", @placeholder = " ", @required = "" } })
+                            <br />
+                            @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+                        </div>
+                    </li>
+                    <li>
+                        <label class="form-label">
+                            Country
+                            <span class="form-required"> * </span>
+                        </label>
+                        <div class="form-input">
+
+                            @Html.EditorFor(model => model.Country, new { htmlAttributes = new { @type = "text", @name = " Country", @placeholder = " ", @required = "" } })
+                            <br />
+                            @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+                        </div>
+                    </li>
+                    <li>
+                        <label class="form-label">
+                            Postal Code
+                            <span class="form-required"> * </span>
+                        </label>
+                        <div class="form-input">
+
+                            @Html.EditorFor(model => model.Pincode, new { htmlAttributes = new { @type = "postal_code", @name = "Pincode", @placeholder = " ", @required = " " } })
+                            <br />
+                            @Html.ValidationMessageFor(model => model.Pincode, "", new { @class = "text-danger" })
+                        </div>
+                    </li>
+
+
+
+
+
+                </ul>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+    </div>
+  
+
+
+
+</body>
+</html>
+
+
+
+
+<div>
+    @Html.ActionLink("Next", "Registration","Occuptional")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

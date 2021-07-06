@@ -1,0 +1,47 @@
+﻿
+@model BankOfIntern.Models.EnterOtp1
+
+@{
+    ViewBag.Title = "EnterOtp";
+}
+
+
+@*<link href="~/Content/Trans1.css" rel="stylesheet" />*@
+@*<link href="~/Content/Trans2.css" rel="stylesheet" />*@
+@Styles.Render("~/Content/csnp")
+
+
+@using (Html.BeginForm("EnterOtp1", "Transaction", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <h3>Enter 4-digit OTP</h3>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.OTP, new { htmlAttributes = new { @class = "form-control", maxlength = "4", id = "partitioned" } })
+                @Html.ValidationMessageFor(model => model.OTP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group-2">
+            <label class="error">@Html.DisplayFor(model => model.OtpErrorMsg)</label>
+        </div>
+
+
+        <div class="form-group-1">
+            <div class="col-md-10">
+                <input type="submit" value="Submit" style="background-color: #343434; border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; margin-top:40%; cursor: pointer; border-radius: 16px; width: 10%; margin-left: 150px;" />
+            </div>
+        </div>
+    </div>
+}
+
+
+@*@section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@
+
+

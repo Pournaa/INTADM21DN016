@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BOIFinalDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AccountMaster">
+    <Key>
+      <PropertyRef Name="AccNo" />
+    </Key>
+    <Property Name="AccNo" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AccHolder" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="IFSCCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccType" Type="varchar" MaxLength="10" />
+    <Property Name="AccOpenDate" Type="date" />
+    <Property Name="AccBalance" Type="int" Nullable="false" />
+    <Property Name="AccStatus" Type="varchar" MaxLength="10" />
+    <Property Name="CustId" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdminLogin">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Pwd" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Beneficiary">
+    <Key>
+      <PropertyRef Name="BeneficiaryID" />
+    </Key>
+    <Property Name="AccNo" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BenAccNo" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BenName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NickName" Type="varchar" MaxLength="50" />
+    <Property Name="BenBankName" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IFSCCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BeneficiaryID" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BeneficiaryType" Type="char" MaxLength="4" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BranchTable">
+    <Key>
+      <PropertyRef Name="IFSCCode" />
+    </Key>
+    <Property Name="IFSCCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BranchName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BranchCode" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Pwd" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CustId" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewAcc">
+    <Key>
+      <PropertyRef Name="CustId" />
+    </Key>
+    <Property Name="CustId" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Fname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Lname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PAN" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Aadhar" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DOB" Type="date" Nullable="false" />
+    <Property Name="ResAdd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BranchName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Pincode" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="State" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PerAdd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PerAdd1" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="City01" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="pincode01" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="state01" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Occupation" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Income" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransTable">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="AccNo" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="FromAccNo" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ToAccNo" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="BeneficiaryID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Amount" Type="smallmoney" />
+    <Property Name="TransDate" Type="date" />
+    <Property Name="TransTime" Type="time" Precision="7" />
+    <Property Name="TransType" Type="varchar" MaxLength="50" />
+    <Property Name="TransactionID" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__AccountMa__CustI__2E1BDC42">
+    <End Role="NewAcc" Type="Self.NewAcc" Multiplicity="1" />
+    <End Role="AccountMaster" Type="Self.AccountMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewAcc">
+        <PropertyRef Name="CustId" />
+      </Principal>
+      <Dependent Role="AccountMaster">
+        <PropertyRef Name="CustId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AccountMa__IFSCC__2D27B809">
+    <End Role="BranchTable" Type="Self.BranchTable" Multiplicity="1" />
+    <End Role="AccountMaster" Type="Self.AccountMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BranchTable">
+        <PropertyRef Name="IFSCCode" />
+      </Principal>
+      <Dependent Role="AccountMaster">
+        <PropertyRef Name="IFSCCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Beneficia__AccNo__30F848ED">
+    <End Role="AccountMaster" Type="Self.AccountMaster" Multiplicity="1" />
+    <End Role="Beneficiary" Type="Self.Beneficiary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountMaster">
+        <PropertyRef Name="AccNo" />
+      </Principal>
+      <Dependent Role="Beneficiary">
+        <PropertyRef Name="AccNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Login__CustId__286302EC">
+    <End Role="NewAcc" Type="Self.NewAcc" Multiplicity="1" />
+    <End Role="Login" Type="Self.Login" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewAcc">
+        <PropertyRef Name="CustId" />
+      </Principal>
+      <Dependent Role="Login">
+        <PropertyRef Name="CustId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TransTabl__Benef__34C8D9D1">
+    <End Role="Beneficiary" Type="Self.Beneficiary" Multiplicity="0..1" />
+    <End Role="TransTable" Type="Self.TransTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Beneficiary">
+        <PropertyRef Name="BeneficiaryID" />
+      </Principal>
+      <Dependent Role="TransTable">
+        <PropertyRef Name="BeneficiaryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TransTabl__Remar__33D4B598">
+    <End Role="AccountMaster" Type="Self.AccountMaster" Multiplicity="0..1" />
+    <End Role="TransTable" Type="Self.TransTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountMaster">
+        <PropertyRef Name="AccNo" />
+      </Principal>
+      <Dependent Role="TransTable">
+        <PropertyRef Name="AccNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="GetAcStatement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+    <Parameter Name="TransDate1" Type="date" Mode="In" />
+    <Parameter Name="TransDate2" Type="date" Mode="In" />
+  </Function>
+  <Function Name="GetAcSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="GetBranchDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="GetEmail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="GetEmail2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AccNo" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="LoginCheck" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+    <Parameter Name="Pwd" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="MailingDet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="TransDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="UpdatePwd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+    <Parameter Name="newpwd" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="ValidIdVerify" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="ViewCustomer_List" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BranchName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ViewUserDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="numeric" Mode="In" />
+  </Function>
+  <EntityContainer Name="BOIFinalDBModelStoreContainer">
+    <EntitySet Name="AccountMaster" EntityType="Self.AccountMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdminLogin" EntityType="Self.AdminLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Beneficiary" EntityType="Self.Beneficiary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BranchTable" EntityType="Self.BranchTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewAcc" EntityType="Self.NewAcc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TransTable" EntityType="Self.TransTable" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__AccountMa__CustI__2E1BDC42" Association="Self.FK__AccountMa__CustI__2E1BDC42">
+      <End Role="NewAcc" EntitySet="NewAcc" />
+      <End Role="AccountMaster" EntitySet="AccountMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AccountMa__IFSCC__2D27B809" Association="Self.FK__AccountMa__IFSCC__2D27B809">
+      <End Role="BranchTable" EntitySet="BranchTable" />
+      <End Role="AccountMaster" EntitySet="AccountMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Beneficia__AccNo__30F848ED" Association="Self.FK__Beneficia__AccNo__30F848ED">
+      <End Role="AccountMaster" EntitySet="AccountMaster" />
+      <End Role="Beneficiary" EntitySet="Beneficiary" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Login__CustId__286302EC" Association="Self.FK__Login__CustId__286302EC">
+      <End Role="NewAcc" EntitySet="NewAcc" />
+      <End Role="Login" EntitySet="Login" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TransTabl__Benef__34C8D9D1" Association="Self.FK__TransTabl__Benef__34C8D9D1">
+      <End Role="Beneficiary" EntitySet="Beneficiary" />
+      <End Role="TransTable" EntitySet="TransTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TransTabl__Remar__33D4B598" Association="Self.FK__TransTabl__Remar__33D4B598">
+      <End Role="AccountMaster" EntitySet="AccountMaster" />
+      <End Role="TransTable" EntitySet="TransTable" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,76 @@
+﻿@model IEnumerable<FarmerApp.Bidding>
+
+@{
+    ViewBag.Title = "View Marketplace";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body>
+    <br />
+    <br />
+    <!-- about breadcrumb -->
+    <section class="w3l-about-breadcrumb text-left">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+            <div class="container">
+                <h2 class="title">Services</h2>
+                <ul class="breadcrumbs-custom-path mt-2">
+                    <li><a href="#url">Home</a></li>
+                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> View Sell Request</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <h2>ViewMarketplace</h2>
+
+
+    <table class="table">
+        <tr>
+            <th>
+                <label>Crop name</label>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Crop_type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Baseprice)
+            </th>
+            <th>
+                <label>Bid Amount</label>
+            </th>
+
+            <th>
+                <label>Bidder Name</label>
+            </th>
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.SellRequest.Crop_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Crop_type)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Baseprice)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Current_Bid)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.BidderReg.Name)
+    </td>
+
+
+
+</tr>}
+
+    </table>
+    <td>
+        @Html.ActionLink("Go Back", "Index")
+    </td>
+
+   </body>
+

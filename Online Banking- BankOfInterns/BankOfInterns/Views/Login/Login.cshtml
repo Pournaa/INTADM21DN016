@@ -1,0 +1,53 @@
+﻿@model BankOfIntern.Models.Login
+
+@{ ViewBag.Title = "Login"; }
+
+<link href="~/Content/Login.css" rel="stylesheet" />
+
+@using (Html.BeginForm("Verify", "Login", FormMethod.Post))
+{
+@Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.UserId, new { htmlAttributes = new { @class = "form-control", @placeholder = "User Id" } })
+            @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Pwd, new { htmlAttributes = new { @class = "form-control", @placeholder = "Password" } })
+            @Html.ValidationMessageFor(model => model.Pwd, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group-2">
+        <label class="error">@Html.DisplayFor(model => model.LoginErrorMsg)</label>
+    </div>
+
+    <div class="form-group-1">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Login" class="btn btn-default" />
+        </div>
+    </div>
+
+    <div class="link-1">
+        @Html.ActionLink("Forgot Password?", "EnterUserId", "ResetPassword")
+    </div>
+
+    <div class="link-1">
+        Don't have an account? @Html.ActionLink("Register", "AccOpen", "NewAcc")
+    </div>
+
+
+</div>}
+
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@
+
+@Styles.Render("~/Content/cse");

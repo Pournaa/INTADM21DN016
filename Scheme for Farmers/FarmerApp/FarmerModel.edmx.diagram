@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3c877b24afad4964979af5a57fafc386" Name="Diagram1" ZoomLevel="108">
+        <EntityTypeShape EntityType="FarmerModel.Admin" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FarmerModel.Adminapproval" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="FarmerModel.BidderReg" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FarmerModel.Bidding" Width="1.5" PointX="8.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="FarmerModel.FarmerReg" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FarmerModel.SellRequest" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FarmerModel.Soldhistory" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <AssociationConnector Association="FarmerModel.FK__Adminappr__Bidde__1BFD2C07" ManuallyRouted="false" />
+        <AssociationConnector Association="FarmerModel.FK__Adminappr__Crop___1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="FarmerModel.FK__Adminappr__Farme__1DE57479" ManuallyRouted="false" />
+        <AssociationConnector Association="FarmerModel.FK__Bidding__Bidder___1ED998B2" ManuallyRouted="false" />
+        <AssociationConnector Association="FarmerModel.FK__Bidding__Crop_ID__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="FarmerModel.FK__SellReque__Farme__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="FarmerModel.FK__Soldhisto__Crop___21B6055D" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

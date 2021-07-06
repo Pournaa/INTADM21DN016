@@ -1,0 +1,144 @@
+﻿@model onlineexam.Models.Student
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <style>
+       
+        #login-div {
+            position: absolute;
+            left: 40%;
+            top: 30%;
+            border-style: outset;
+            border-width: 7px;
+            border-color: coral;
+            padding: 20px 20px;
+            background-color: white;
+        }
+
+        #login-btn {
+            width: 100px;
+            height: 30px;
+            border: none;
+            padding: 2px;
+            border-radius: 15px;
+            color: white;
+            background-color: rgb(38, 189, 103);
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial';
+            background-image: url('../../image/back.jpeg');
+            background-repeat: no-repeat;
+            /* background-image: url('../../images/back.jpeg');*/
+            background-attachment: scroll;
+            background-size: cover;
+            background-position: center;
+            height: 740px;
+            border: none;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        .field-validation-error {
+            color: red;
+        }
+
+        .forgot-password {
+            text-align: center;
+            float: right;
+            font-size: 15px;
+            padding: 10px;
+            padding-right: 120px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            border-radius: 15px;
+        }
+
+        a {
+            color: deepskyblue;
+            display: inline-block;
+        }
+
+        button {
+            padding: 2px;
+            border-radius: 2px;
+            background-color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Authorize", "Login", FormMethod.Post))
+        {
+
+            <table id="login-div">
+
+                <tr>
+                    <td></td>
+                   
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.UserName)</td>
+                    <td>@Html.EditorFor(model => model.UserName)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@Html.ValidationMessageFor(model => model.UserName)</td>
+                </tr>
+
+
+                <tr>
+                    <td>@Html.LabelFor(model => model.User_Password)</td>
+                    <td>@Html.EditorFor(model => model.User_Password)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@Html.ValidationMessageFor(model => model.User_Password)</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label class="field-validation-error">@Html.DisplayFor(model => model.LoginErrorMsg)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td><input type="submit" value="Login" id="login-btn" />
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        @*<button>*@
+                        <span class="forgot-password">
+                            <a href="no-javascript1.html" title="Forgot Password" id="link-reset">Forgot Password?</a>
+                        </span>
+                        @*</button>*@
+                    </td>
+                </tr>
+            </table>
+
+
+        }
+        <script src="~/Scripts/jquery-1.8.0.min.js"></script>
+        <script src="~/Scripts/jquery.validate.min.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    </div>
+</body>
+</html>

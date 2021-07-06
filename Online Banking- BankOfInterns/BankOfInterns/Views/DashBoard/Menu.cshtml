@@ -1,0 +1,49 @@
+﻿@Session["uid"]
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    @Styles.Render("~/Content/csd")
+</head>
+<body>
+    <div class="link2"> <h3>Dashboard</h3></div>
+    @{
+        string url = Url.Action("Logout", "Logout");
+    }
+    <input type="button" value="Logout" class="submit" onclick="window.location.href = '@url'" />
+    <div id="custom-card1">
+        <div id="card1" style="width: 20rem;display: inline-block">
+            <div class="card-body1">
+                <h5 class="card-title1"> @Html.ActionLink("Branch Details", "BranchDetails", "DashBoard", new { id =Session["uid"] }, new { id = "OT", style = "color:rgb(198,199,198);text-decoration:none" })</h5>
+                <p class="card-text1"> To know the details of the branch like branch name,city and IFSC Code of the bank.</p>
+            </div>
+        </div>
+
+        <div id="card1" style="width: 20rem; display:inline-block">
+            <div class="card-body1">
+                <h5 class="card-title1"> @Html.ActionLink("Account Statement", "AcStatement", new { id =Session["uid"] }, new { id = "OT", style = "color:rgb(198,199,198);text-decoration:none" })</h5>
+                <p class="card-text1">To view the account statement of the customer for a particular period of time.</p>
+            </div>
+        </div>
+
+        <div id="card1" style="width: 20rem; display: inline-block">
+            <div class="card-body1">
+                <h5 class="card-title1"> @Html.ActionLink("Account Summary", "AcSummary",new { id =Session["uid"] }, new { id = "OT", style = "color:rgb(198,199,198);text-decoration:none" })</h5>
+                <p class="card-text1">To view the available balance amount in the account and type of the account used.</p>
+            </div>
+        </div>
+
+        <div id="card1" style="width: 20rem; display:inline-block">
+            <div class="card-body1">
+                <h5 class="card-title1">@Html.ActionLink("Transactions","Trans","Transaction", new { id =Session["uid"] }, new { id = "OT", style = "color:rgb(198,199,198);text-decoration:none" })</h5>
+                <p class="card-text1">To transfer the money from your account to other accounts through NEFT payment method.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

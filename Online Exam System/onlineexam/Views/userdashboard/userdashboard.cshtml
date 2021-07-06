@@ -1,0 +1,102 @@
+﻿
+
+@{ ViewBag.Title = "Dashboard"; }
+
+@*Layout = "~/Views/Shared/_Layout.cshtml";*@
+
+
+<html>
+<head>
+
+
+
+    <meta charset="utf-8">
+    <title>DASHBOARD</title>
+    @Styles.Render("~/Content/BoardStyles.css")
+    <style>
+        body { /*background-image: */ /*url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBsYWluJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');*/
+            /* background-image: url('../../images/pic.png');*/
+            background-image: url('../../image/images.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .heading {
+            color: palevioletred;
+            font-family: 'Roboto', sans serif;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        #t3 {
+            margin-right: 25px;
+            margin-top: -20px;
+            text-align: right;
+        }
+
+        #custom-card {
+            padding-left: 40%;
+        }
+
+        .card-body {
+            height: 250px;
+            width: 280px;
+            background-color: #6dc77a;
+            border-color: black;
+            border-style: double;
+            border-radius: 15px 50px 30px 5px;
+            padding-left: 2%;
+            padding-right: 6%;
+        }
+
+        .card-title {
+            font-size: 25px;
+            color: black;
+            padding-left: 12%;
+            padding-right: 6%;
+            padding-top: 20%;
+        }
+
+            .card-title:hover, .card-title:focus {
+                color: palevioletred;
+            }
+
+        .card-text {
+            font-size: 20px;
+            color: mediumpurple;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heading"> <h2>User Dashboard</h2></div>
+    <div id="t3">
+       
+        <a href="/Home/Index1"><input type="button" value="Logout"></a>
+    </div>
+    <div id="custom-card">
+        <div id="card" style="width: 10rem;display: inline-block">
+            <div class="card-body ">
+                <div class="card-title">
+                    <h5 class="card-title"> @Html.ActionLink("New Exam", "Index2","Home")</h5>
+                    @*@<p class="card-text"> Show your profile</p>@*@
+                </div>
+            </div>
+            <div id="card" style="width: 10rem; display:inline-block">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h5 class="card-title">@Html.ActionLink("Report", "report")</h5>
+                        @*@<p class="card-text">Check your booking history </p>@*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+</body>
+</html>
+

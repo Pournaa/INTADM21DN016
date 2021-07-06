@@ -1,0 +1,88 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br />
+<br />
+<br />
+<br />
+<body>
+    
+        <br />
+        <br />
+        <!-- about breadcrumb -->
+        <section class="w3l-about-breadcrumb text-left">
+            <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+                <div class="container">
+                    <h2 class="title">Services</h2>
+                    <ul class="breadcrumbs-custom-path mt-2">
+                        <li><a href="#url">Home</a></li>
+                        <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Admin Home </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="row bottom-ab-grids align-items-center">
+            <div class="col-lg-4 bottom-ab-left">
+                <div class="grdhny-info">
+                    <img src="~/images/g1.jpg" class="img-curve img-fluid" alt="" />
+                    <h4>
+                        <a href="@Url.Action("FarDetails", "Admin")">
+                            Farmar Details
+                            <p class="mt-2">
+                                "Description"
+
+                            </p>
+                </div>
+            </div>
+            <div class="col-lg-4 bottom-ab-right my-lg-0 my-5">
+                <div class="grdhny-info">
+                    <img src="~/images/g2.jpg" class="img-curve img-fluid" alt="" />
+                    <a href="@Url.Action("BidDetails", "Admin")">Bidding Details</a>
+                    <p class="mt-2">
+                        "Description"
+                        tenetur consequatur.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 bottom-ab-right">
+                <div class="grdhny-info">
+                    <img src="~/images/g3.jpg" class="img-curve img-fluid" alt="" />
+                    <h4><a href="@Url.Action("ViewBidding", "Admin")">View Bidding</a></h4>
+                    <p class="mt-2">
+                        "Description"
+                        tenetur consequatur.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 bottom-ab-right">
+                <div class="grdhny-info">
+                    <img src="~/images/g3.jpg" class="img-curve img-fluid" alt="" />
+                    <h4><a href="@Url.Action("ViewSoldhistory", "Admin")">Sold History</a></h4>
+                    <p class="mt-2">
+                        "Description"
+                        tenetur consequatur.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </body>
+    <br />
+    <br />
+    <br />
+    <br />
+

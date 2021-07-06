@@ -1,0 +1,976 @@
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\ApplicationInsights.config
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\FarmerApp.dll.config
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\FarmerApp.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\FarmerApp.pdb
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\csc.exe
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\csc.exe.config
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\csc.rsp
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\csi.exe
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\csi.exe.config
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\csi.rsp
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.AppContext.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Collections.Immutable.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Console.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.Process.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.IO.Compression.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.IO.Pipes.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Security.AccessControl.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Security.Claims.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Security.Principal.Windows.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Threading.Thread.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.ValueTuple.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Xml.ReaderWriter.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Xml.XmlDocument.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\vbc.exe
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\vbc.exe.config
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\vbc.rsp
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe.config
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Antlr3.Runtime.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\EntityFramework.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AI.Web.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.ApplicationInsights.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Web.Infrastructure.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Newtonsoft.Json.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Owin.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.Helpers.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.Mvc.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.Optimization.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.Razor.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.WebPages.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\WebGrease.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.Helpers.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.Mvc.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.Optimization.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.Razor.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.WebPages.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Newtonsoft.Json.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Antlr3.Runtime.pdb
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\EntityFramework.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.AI.Web.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CoreCompileInputs.cache
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CopyComplete
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.dll
+c:\users\pcuser\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.pdb
+C:\Users\pcuser\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csprojAssemblyReference.cache
+D:\FarmerApp\FarmerApp\bin\ApplicationInsights.config
+D:\FarmerApp\FarmerApp\bin\FarmerApp.dll.config
+D:\FarmerApp\FarmerApp\bin\FarmerApp.dll
+D:\FarmerApp\FarmerApp\bin\FarmerApp.pdb
+D:\FarmerApp\FarmerApp\bin\roslyn\csc.exe
+D:\FarmerApp\FarmerApp\bin\roslyn\csc.exe.config
+D:\FarmerApp\FarmerApp\bin\roslyn\csc.rsp
+D:\FarmerApp\FarmerApp\bin\roslyn\csi.exe
+D:\FarmerApp\FarmerApp\bin\roslyn\csi.exe.config
+D:\FarmerApp\FarmerApp\bin\roslyn\csi.rsp
+D:\FarmerApp\FarmerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\FarmerApp\FarmerApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.AppContext.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Collections.Immutable.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Console.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.Process.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.IO.Compression.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.IO.Pipes.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Security.AccessControl.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Security.Claims.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Security.Principal.Windows.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Threading.Thread.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.ValueTuple.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Xml.XmlDocument.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\FarmerApp\FarmerApp\bin\roslyn\vbc.exe
+D:\FarmerApp\FarmerApp\bin\roslyn\vbc.exe.config
+D:\FarmerApp\FarmerApp\bin\roslyn\vbc.rsp
+D:\FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe
+D:\FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe.config
+D:\FarmerApp\FarmerApp\bin\Antlr3.Runtime.dll
+D:\FarmerApp\FarmerApp\bin\EntityFramework.dll
+D:\FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.AI.Agent.Intercept.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.AI.Web.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.ApplicationInsights.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.dll
+D:\FarmerApp\FarmerApp\bin\Microsoft.Web.Infrastructure.dll
+D:\FarmerApp\FarmerApp\bin\Newtonsoft.Json.dll
+D:\FarmerApp\FarmerApp\bin\Owin.dll
+D:\FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.dll
+D:\FarmerApp\FarmerApp\bin\System.Web.Helpers.dll
+D:\FarmerApp\FarmerApp\bin\System.Web.Mvc.dll
+D:\FarmerApp\FarmerApp\bin\System.Web.Optimization.dll
+D:\FarmerApp\FarmerApp\bin\System.Web.Razor.dll
+D:\FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.dll
+D:\FarmerApp\FarmerApp\bin\System.Web.WebPages.dll
+D:\FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.dll
+D:\FarmerApp\FarmerApp\bin\WebGrease.dll
+D:\FarmerApp\FarmerApp\bin\System.Web.Helpers.xml
+D:\FarmerApp\FarmerApp\bin\System.Web.Mvc.xml
+D:\FarmerApp\FarmerApp\bin\System.Web.Optimization.xml
+D:\FarmerApp\FarmerApp\bin\System.Web.Razor.xml
+D:\FarmerApp\FarmerApp\bin\System.Web.WebPages.xml
+D:\FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.xml
+D:\FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.xml
+D:\FarmerApp\FarmerApp\bin\Newtonsoft.Json.xml
+D:\FarmerApp\FarmerApp\bin\Antlr3.Runtime.pdb
+D:\FarmerApp\FarmerApp\bin\EntityFramework.xml
+D:\FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.xml
+D:\FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.AI.Web.xml
+D:\FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CoreCompileInputs.cache
+D:\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CopyComplete
+D:\FarmerApp\FarmerApp\obj\Debug\FarmerApp.dll
+D:\FarmerApp\FarmerApp\obj\Debug\FarmerApp.pdb
+D:\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csprojAssemblyReference.cache
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\ApplicationInsights.config
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\FarmerApp.dll.config
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\FarmerApp.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\FarmerApp.pdb
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\csc.exe
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\csc.exe.config
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\csc.rsp
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\csi.exe
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\csi.exe.config
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\csi.rsp
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.AppContext.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Console.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.IO.Pipes.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Security.Claims.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Threading.Thread.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\vbc.exe
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\vbc.exe.config
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\vbc.rsp
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Antlr3.Runtime.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\EntityFramework.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AI.Web.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Newtonsoft.Json.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Owin.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.Helpers.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.Mvc.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.Optimization.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.Razor.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.WebPages.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\WebGrease.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.Helpers.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.Mvc.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.Optimization.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.Razor.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.WebPages.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Newtonsoft.Json.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Antlr3.Runtime.pdb
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\EntityFramework.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.AI.Web.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csprojAssemblyReference.cache
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CoreCompileInputs.cache
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CopyComplete
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\obj\Debug\FarmerApp.dll
+C:\Users\pcuser\Desktop\FarmerApp\FarmerApp\obj\Debug\FarmerApp.pdb
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\ApplicationInsights.config
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\FarmerApp.dll.config
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\FarmerApp.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\FarmerApp.pdb
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\csc.exe
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\csc.exe.config
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\csc.rsp
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\csi.exe
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\csi.exe.config
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\csi.rsp
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.AppContext.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Collections.Immutable.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Console.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.Process.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.Compression.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.Pipes.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Reflection.Metadata.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.AccessControl.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Claims.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Principal.Windows.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Threading.Thread.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.ValueTuple.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.ReaderWriter.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XmlDocument.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\vbc.exe
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\vbc.exe.config
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\vbc.rsp
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe.config
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Antlr3.Runtime.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\EntityFramework.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Agent.Intercept.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Web.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.ApplicationInsights.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Web.Infrastructure.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Newtonsoft.Json.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Owin.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.Helpers.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.Mvc.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.Optimization.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.Razor.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\WebGrease.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.Helpers.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.Mvc.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.Optimization.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.Razor.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Newtonsoft.Json.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Antlr3.Runtime.pdb
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\EntityFramework.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Web.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CoreCompileInputs.cache
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CopyComplete
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.dll
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.pdb
+\\infch03197\Batch809\shwetha\New folder\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csprojAssemblyReference.cache
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\ApplicationInsights.config
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\FarmerApp.dll.config
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\FarmerApp.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\FarmerApp.pdb
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\csc.exe
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\csc.exe.config
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\csc.rsp
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\csi.exe
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\csi.exe.config
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\csi.rsp
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.AppContext.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Console.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.Pipes.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Claims.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Threading.Thread.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\vbc.exe
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\vbc.exe.config
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\vbc.rsp
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Antlr3.Runtime.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\EntityFramework.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Web.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Newtonsoft.Json.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Owin.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.Helpers.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.Mvc.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.Optimization.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.Razor.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\WebGrease.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.Helpers.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.Mvc.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.Optimization.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.Razor.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Newtonsoft.Json.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Antlr3.Runtime.pdb
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\EntityFramework.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Web.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CoreCompileInputs.cache
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CopyComplete
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.dll
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.pdb
+C:\Users\pcuser\Desktop\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csprojAssemblyReference.cache
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\ApplicationInsights.config
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\FarmerApp.dll.config
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\FarmerApp.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\FarmerApp.pdb
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csc.exe
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csc.exe.config
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csc.rsp
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csi.exe
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csi.exe.config
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csi.rsp
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.AppContext.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Console.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.Process.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.Compression.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.Pipes.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.AccessControl.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Claims.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Threading.Thread.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.ValueTuple.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\vbc.exe
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\vbc.exe.config
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\vbc.rsp
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Antlr3.Runtime.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Web.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Newtonsoft.Json.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Owin.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Helpers.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Mvc.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Optimization.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Razor.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\WebGrease.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Helpers.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Mvc.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Optimization.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Razor.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Newtonsoft.Json.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Antlr3.Runtime.pdb
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Web.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csprojAssemblyReference.cache
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CoreCompileInputs.cache
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CopyComplete
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.dll
+C:\Jamuna\slides\dotNet June 2019\GET .net 809 B10\GLADIATOR\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.pdb
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\ApplicationInsights.config
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\FarmerApp.dll.config
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\FarmerApp.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\FarmerApp.pdb
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csc.exe
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csc.exe.config
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csc.rsp
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csi.exe
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csi.exe.config
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csi.rsp
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.AppContext.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Console.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.Pipes.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Claims.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Threading.Thread.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\vbc.exe
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\vbc.exe.config
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\vbc.rsp
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Web.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Owin.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Helpers.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Mvc.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Optimization.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Razor.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\WebGrease.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Helpers.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Mvc.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Optimization.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Razor.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Web.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.AssemblyReference.cache
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CopyComplete
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.dll
+C:\Users\DELL\Downloads\ProjectSampleMVC-master\ProjectSampleMVC-master\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.pdb
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\ApplicationInsights.config
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\FarmerApp.dll.config
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\FarmerApp.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\FarmerApp.pdb
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csc.exe
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csc.exe.config
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csc.rsp
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csi.exe
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csi.exe.config
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\csi.rsp
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.AppContext.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Console.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.IO.Pipes.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Claims.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Threading.Thread.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\vbc.exe
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\vbc.exe.config
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\vbc.rsp
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Antlr3.Runtime.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Web.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Newtonsoft.Json.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Owin.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Helpers.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Mvc.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Optimization.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Razor.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\WebGrease.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Helpers.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Mvc.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Optimization.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.Razor.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Newtonsoft.Json.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Antlr3.Runtime.pdb
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\EntityFramework.SqlServer.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.AI.Web.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.AssemblyReference.cache
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CoreCompileInputs.cache
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CopyComplete
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.dll
+C:\Users\abc\Downloads\Schemes for farmer\Schemes for farmer\Final FarmerApp\FarmerApp\obj\Debug\FarmerApp.pdb

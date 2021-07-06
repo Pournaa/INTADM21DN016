@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FarmerModelStoreContainer" CdmEntityContainer="FarmersEntities">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="FarmerModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adminapprovals">
+      <EntityTypeMapping TypeName="FarmerModel.Adminapproval">
+        <MappingFragment StoreEntitySet="Adminapproval">
+          <ScalarProperty Name="Farmer_ID" ColumnName="Farmer_ID" />
+          <ScalarProperty Name="Crop_ID" ColumnName="Crop_ID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Bidder_ID" ColumnName="Bidder_ID" />
+          <ScalarProperty Name="Adminapp_ID" ColumnName="Adminapp_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BidderRegs">
+      <EntityTypeMapping TypeName="FarmerModel.BidderReg">
+        <MappingFragment StoreEntitySet="BidderReg">
+          <ScalarProperty Name="Bidder_ID" ColumnName="Bidder_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Contact_no" ColumnName="Contact_no" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="IFSC_code" ColumnName="IFSC_code" />
+          <ScalarProperty Name="Aadhaar" ColumnName="Aadhaar" />
+          <ScalarProperty Name="PAN" ColumnName="PAN" />
+          <ScalarProperty Name="Trader_license" ColumnName="Trader_license" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Biddings">
+      <EntityTypeMapping TypeName="FarmerModel.Bidding">
+        <MappingFragment StoreEntitySet="Bidding">
+          <ScalarProperty Name="BiddingID" ColumnName="BiddingID" />
+          <ScalarProperty Name="Crop_ID" ColumnName="Crop_ID" />
+          <ScalarProperty Name="Crop_type" ColumnName="Crop_type" />
+          <ScalarProperty Name="Baseprice" ColumnName="Baseprice" />
+          <ScalarProperty Name="Current_Bid" ColumnName="Current_Bid" />
+          <ScalarProperty Name="Bidder_ID" ColumnName="Bidder_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FarmerRegs">
+      <EntityTypeMapping TypeName="FarmerModel.FarmerReg">
+        <MappingFragment StoreEntitySet="FarmerReg">
+          <ScalarProperty Name="Farmer_ID" ColumnName="Farmer_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Contact_no" ColumnName="Contact_no" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Land_Address" ColumnName="Land_Address" />
+          <ScalarProperty Name="Land_Pincode" ColumnName="Land_Pincode" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="IFSC_code" ColumnName="IFSC_code" />
+          <ScalarProperty Name="Aadhaar" ColumnName="Aadhaar" />
+          <ScalarProperty Name="PAN" ColumnName="PAN" />
+          <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SellRequests">
+      <EntityTypeMapping TypeName="FarmerModel.SellRequest">
+        <MappingFragment StoreEntitySet="SellRequest">
+          <ScalarProperty Name="Crop_ID" ColumnName="Crop_ID" />
+          <ScalarProperty Name="Crop_type" ColumnName="Crop_type" />
+          <ScalarProperty Name="Crop_name" ColumnName="Crop_name" />
+          <ScalarProperty Name="Fertilizer" ColumnName="Fertilizer" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Soil_PH" ColumnName="Soil_PH" />
+          <ScalarProperty Name="Baseprice" ColumnName="Baseprice" />
+          <ScalarProperty Name="Farmer_ID" ColumnName="Farmer_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Soldhistories">
+      <EntityTypeMapping TypeName="FarmerModel.Soldhistory">
+        <MappingFragment StoreEntitySet="Soldhistory">
+          <ScalarProperty Name="Sold_ID" ColumnName="Sold_ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Crop_ID" ColumnName="Crop_ID" />
+          <ScalarProperty Name="Crop_name" ColumnName="Crop_name" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Baseprice" ColumnName="Baseprice" />
+          <ScalarProperty Name="Soldprice" ColumnName="Soldprice" />
+          <ScalarProperty Name="Totalprice" ColumnName="Totalprice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

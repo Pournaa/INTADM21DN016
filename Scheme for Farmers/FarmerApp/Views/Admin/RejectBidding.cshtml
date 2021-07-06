@@ -1,0 +1,80 @@
+﻿@model FarmerApp.Bidding
+
+@{ ViewBag.Title = "RejectBidding";
+                Layout = "~/Views/Shared/_Layout.cshtml"; }
+<br />
+<br />
+<!-- about breadcrumb -->
+<section class="w3l-about-breadcrumb text-left">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+        <div class="container">
+            <h2 class="title">RejectBidding</h2>
+            <ul class="breadcrumbs-custom-path mt-2">
+                <li><a href="#url">Home</a></li>
+                <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> RejectBidding </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<br />
+<br />
+<br />
+<br />
+<h2>RejectBidding</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Bidding</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Crop_type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Crop_type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Baseprice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Baseprice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Current_Bid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Current_Bid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BidderReg.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BidderReg.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SellRequest.Crop_type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SellRequest.Crop_type)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+@Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-default" /> |
+                    @Html.ActionLink("Back to List", "ViewBidding")
+                </div>}
+</div>

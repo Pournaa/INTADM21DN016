@@ -1,0 +1,176 @@
+﻿@model ProjectBusss.Models.Schedule
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Schedule</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bus.BusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bus.BusName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.source)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.source)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sourceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sourceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dest)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dest)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.destId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.destId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.scheduleDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.scheduleDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.depatureTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.depatureTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.arrivalDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.arrivalDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.arrivalTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.arrivalTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AC_SleeperSeats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AC_SleeperSeats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NonAC_SleeperSeats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NonAC_SleeperSeats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ACSemi_SleeperSeats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ACSemi_SleeperSeats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NonACSemi_SleeperSeats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NonACSemi_SleeperSeats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.costAC_Sleeper)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.costAC_Sleeper)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.costNonAC_Sleeper)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.costNonAC_Sleeper)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.costACSemi_Sleeper)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.costACSemi_Sleeper)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.costNonACSemi_Sleeper)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.costNonACSemi_Sleeper)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.travelType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.travelType)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

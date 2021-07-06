@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Home Loan</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+
+    <style>
+        .footer-dark {
+    padding: 50px 0;
+    color: #f0f9ff;
+    background-color: #282d32;
+}
+
+    .footer-dark h3 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .footer-dark ul {
+        padding: 0;
+        list-style: none;
+        line-height: 1.6;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+        .footer-dark ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+
+            .footer-dark ul a:hover {
+                opacity: 0.8;
+            }
+.footer-dark .item.text {
+    margin-bottom: 36px;
+}
+
+}
+
+.footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+    text-align: center;
+}
+
+
+.footer-dark .item.social > a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+}
+
+    .footer-dark .item.social > a:hover {
+        opacity: 0.9;
+    }
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+
+    </style>
+
+</head>
+<body style="margin:0;">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Home Loan", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Apply Now", "Registration", "UserRegistration")</li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" role="button" aria-expanded="false" href="#" data-toggle="dropdown">Calculator <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu" role="menu">
+                        <li>@Html.ActionLink("Eligibility Calculator", "Eligibility", "Home")</li>
+                        <li>@Html.ActionLink("EMI Calculator", "Emi", "Home")</li>
+                    </ul>
+                </li>
+
+                <li>@Html.ActionLink("Loan Tracker", "LoanTracker", "Tracker")</li>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li> @Html.ActionLink("Sign Up", "Register", "LoanReg")  </li>
+                    <li> @Html.ActionLink("Login", "Login", "Login")  </li>
+                </ul>
+
+                <li style="float:right">@Html.ActionLink("FAQ", "FAQ", "Home")</li>
+
+
+
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+
+
+     
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+<div class="footer-dark" style="margin-top: 6%; padding-right:0;padding-left:0; >
+    <footer style="margin-top: 20%">
+       
+        <div @*class="container"*@>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item" style="margin-left: 50%">
+                    <h4>Additional Pages</h4>
+                    <ul class="menu-list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How We Work</a></li>
+
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-item last-item  padding-0">
+                    <h4>Contact Us</h4>
+                    <p>Toll Free No - 1800-XXXX-4000</p>
+                    <p> E-Mail - abc@gmail.com</p>
+                  
+                </div>
+            </div>
+            <p class="copyright">Copyright &copy; 2020 , Inc. All rights reserved.</p>
+
+</footer>
+
+

@@ -1,0 +1,131 @@
+﻿
+<html>
+<head>
+
+
+
+    <meta charset="utf-8">
+    <title>DASHBOARD</title>
+    @*@Styles.Render("~/Content/BoardStyles.css")*@
+    <style>
+        body {
+            //background-image: url('../../Images/img1.jpg');
+            //background-image: url('~/Content/Images/blue.jpg');
+            background-image: url('../../image/online-exam.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            overflow: auto;
+            color: white;
+        }
+
+        ul {
+            overflow: auto;
+            padding: 10px;
+        }
+
+        .index {
+            list-style-type: none;
+            text-decoration: none;
+            float: left;
+            margin: 10px;
+            font-size: 20px;
+            padding: 25px;
+        }
+
+        /*.logout {
+            float: right;
+            padding: 25px;
+            text-decoration: underline;
+        }*/
+
+        .content {
+            text-align: center;
+            color: blue;
+            margin-top: 100px;
+        }
+
+        .addQuestion {
+            text-decoration: underline;
+        }
+
+        .nav-li {
+            float: left;
+            margin: 10px;
+        }
+        .heading {
+            color: palevioletred;
+            font-family: 'Roboto', sans serif;
+            font-size: 14px;
+            text-align: center;
+        }
+            #viewReport {
+            width: 200px;
+            height: 30px;
+            border: none;
+            border-radius: 17px;
+            padding-left: 10px;
+            color: white;
+            background-color: seagreen;
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        #t3 {
+            margin-right: 25px;
+            margin-top: -20px;
+            text-align: right;
+        }
+
+        #Search {
+            width: 200px;
+            height: 30px;
+            border: none;
+            border-radius: 17px;
+            padding-left: 10px;
+            color: white;
+            background-color: seagreen;
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading"> <h2>Admin Dashboard</h2></div>
+    @*<nav>
+            <ul>
+                <div class='index'>
+                    <ul class='nav-li'>
+                        <a href='#'>Home</a>
+                    </ul>
+                    <ul class='nav-li'>
+                        <a href='#'>AboutUs</a>
+                    </ul>
+                </div>
+                <div class='logout'>
+                    <ul>
+                        <a href='#'>Logout</a>
+                    </ul>
+                </div>
+            </ul>
+        </nav>*@
+    <div id="t3">
+
+        <a href="/Home/Index1"><input type="button" value="Logout"></a>
+    </div>
+    <div class='content'>
+        @*<button type="text" id="addQuestions name="addQuestion">Add Question</button></br></br>
+            <button type="text" id="removeQuestions name="removeQuestion">Remove Question</button></br></br>
+            <button type="text" id="viewReport name name="viewReport">View Report</button></br>*@
+        @*<input type="submit" value="Search Student" id="Search Student" /></br></br>*@
+        @*<input type="submit" value="Remove Question" id="removeQuestions" /></br></br>*@
+
+        <a href="/SearchStudent/Search"> <input type="submit" value="Search Student" id="Search" /> </a></br></br>
+        <a href="/Report/report"><input type="submit" value="View Report" id="viewReport" /></a>
+    </div>
+</body>
+</html>

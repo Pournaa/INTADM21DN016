@@ -1,0 +1,70 @@
+﻿
+body {
+    /*background-image: url('../images/back.jpeg');*/
+    background-image: url('../../image/back.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    height: 740px;
+    border: none;
+}
+
+.button {
+    width: 200px;
+    height: 200px;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-size: 40px;
+}
+
+.button1 {
+    background-color: rgb(153, 97, 153);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.button2 {
+    background-color: rgb(153, 97, 153);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.button3 {
+    background-color: rgb(153, 97, 153);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.button4 {
+    background-color: rgb(153, 97, 153);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.button5 {
+    background-color: rgb(153, 97, 153);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.button6 {
+    background-color: rgb(153, 97, 153);
+    border-radius: 8px;
+    margin: 10px;
+}

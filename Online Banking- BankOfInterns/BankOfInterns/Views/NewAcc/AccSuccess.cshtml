@@ -1,0 +1,48 @@
+﻿@model BankOfIntern.Models.MailingDet_Result
+@Styles.Render("~/Content/css")
+<div>
+    <div class="link1"> <h3>Account Created Successfully</h3></div><br />
+    <h4><b>Your Account Details</b></h4><br />
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model =>Model.AccNo)
+        </dt>
+
+        <dd>
+            @{
+                long AccNum = Convert.ToInt64(Model.AccNo);
+            }
+            @Html.DisplayFor(model =>AccNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @{
+                long Userid = Convert.ToInt64(Model.UserId);
+            }
+            @Html.DisplayFor(model =>Userid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pwd)
+        </dt>
+
+        <dd>
+           
+            @Html.DisplayFor(model =>model.Pwd)
+        </dd>
+
+    </dl>
+</div>

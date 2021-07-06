@@ -1,0 +1,31 @@
+   public ActionResult ApproveBidding(int id)
+        {
+            var x = (from i in db.Biddings
+                     join j in db.SellRequests on i.Crop_ID equals j.Crop_ID
+                     where i.BiddingID == id
+                     select new { i.Crop_ID, i.Bidder_ID, j.Farmer_ID,j.Crop_name,j.Quantity,j.Baseprice,i.Current_Bid }).SingleOrDefault();
+            Adminapproval ad = new Adminapproval();
+            ad.Bidder_ID = x.Bidder_ID;
+            ad.Crop_ID = x.Crop_ID;
+            ad.Farmer_ID = (int)x.Farmer_ID;
+            ad.Status = "yes";
+           
+
+            Soldhistory sh = new Soldhistory();
+            sh.Date= DateTime.Now;
+            sh.Crop_ID = x.Crop_ID;
+            sh.Crop_name = x.Crop_name;
+            sh.Quantity = x.Quantity;
+            sh.Baseprice = (double)x.Baseprice;
+            sh.Soldprice = x.Current_Bid;
+            sh.Totalprice = (x.Current_Bid * 2)/100;
+
+
+            db.Adminapprovals.Add(ad);
+            db.SaveChanges();
+            db.Soldhistories.Add(sh);
+            db.SaveChanges();
+
+            return RedirectToAction("BidDetails");
+ 
+        }

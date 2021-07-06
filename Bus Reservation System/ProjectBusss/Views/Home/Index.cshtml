@@ -1,0 +1,72 @@
+﻿@model ProjectBusss.Models.Schedule
+@{ ViewBag.Title = "Home"; }
+<style>
+    input[type=submit] {
+        background-color: forestgreen;
+        color: white;
+        padding: 8px 20px 8px 20px;
+        border-radius: 13px;
+        font-size: 1em;
+    }
+  
+</style>
+<div class="jumbotron">
+    <h1>BookMyTrip</h1>
+    <p class="lead">Book Bus for lowest costs and enjoy your journey!</p>
+</div>
+
+@if (User.Identity.Name.Contains("admin@gmail.com"))
+{
+<h3 style="color:black;text-decoration:none">
+    @Html.ActionLink("Modify Schedule", "Index", "Schedules") <br />
+    @Html.ActionLink("Modify Bus Information", "Index", "Buses")
+</h3>}
+<div class="row">
+    <div class="col-md-6">
+        <h4>Search for Buses:</h4>
+        <br />
+        @using (Html.BeginForm("SearchResults", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+<fieldset>
+    <div class="form-group">
+        <label class="col-md-2">Source: </label>
+        <div class="col-md-10">
+            @Html.DropDownList("source", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.source, "", new { @class = "text-danger" })
+            <br />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2">Destination: </label>
+        <div class="col-md-10">
+            @Html.DropDownList("dest", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.dest, "", new { @class = "text-danger" })
+            <br />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2">Date of Journey: </label>
+        <div class="col-md-10">
+            <input type="date" name="dateOfJourney" class="form-control" />
+            @Html.ValidationMessageFor(model => model.scheduleDate, "")
+            <br />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Search Buses" />
+        </div>
+    </div>
+</fieldset>}
+
+    </div>
+    <div class="col-md-4">
+        @Html.ActionLink("Booking Hisory", "Index", "Reservations")<br /><br />
+
+        <img src="https://images.unsplash.com/photo-1547886596-61770d06925b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGluZGlhbiUyMGJ1c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" height="300" width="500">
+
+    </div>
+</div>
+

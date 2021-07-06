@@ -1,0 +1,142 @@
+﻿@model onlineexam.Models.Student
+@{ Layout = null; }
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+
+    <link href="~/template/css/StyleSheet1.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="Online-Exam">
+        <div class="heading">
+            <h1>Registration</h1>
+        </div>
+        <div class="container">
+            <div class="agile-form">
+                <form action="Registration" method="post">
+                    <ul class="field-list">
+                        <li>
+                            <label class="form-label">
+                                User Name
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                                @*@<input type="text" name="full_name" placeholder="" required>@*@
+                                @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @type = "text", @name = "User_name", @placeholder = " ", @required = " " } })
+                            </div>
+                        </li>
+                        <li>
+                            <label class="form-label">
+                                Email
+
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                                @*@<input type="email" name="email" placeholder="" required>@*@
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @type = "email", @name = "email", @placeholder = "", @required = " " } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </li>
+                        <li>
+                            <label class="form-label">
+                                Password
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                                @*@<input type="text" name="mother_name" placeholder="" class="expand" required>@*@
+                                @Html.EditorFor(model => model.User_Password, "", new { htmlAttributes = new { @type = "password", @name = "Password", @placeholder = "", @required = " ", @class = "expand" } })
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <label class="form-label">
+                                City
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                                @*@<input type="text" name="city" placeholder=" " required>@*@
+                                @Html.EditorFor(model => model.City, new { htmlAttributes = new { @type = "text", @name = "city", @placeholder = " ", @required = " " } })
+                            </div>
+                        </li>
+                        <li>
+                            <label class="form-label">
+                                State
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                                @*@<input type="text" name="city" placeholder=" " required>@*@
+                                @Html.EditorFor(model => model.State, new { htmlAttributes = new { @type = "text", @name = "State", @placeholder = " ", @required = "" } })
+                            </div>
+                        </li>
+                        <li>
+                            <label class="form-label">
+                                Postal Code
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                                @*@<input type="text" name="city" placeholder=" " class="expand" required>@*@
+                                @Html.EditorFor(model => model.Postal_Code, new { htmlAttributes = new { @type = "postal_code", @name = "Postal_Code", @placeholder = " ", @required = " ", @class = "expand" } })
+                            </div>
+                        </li>
+
+                        <li>
+                            <label class="form-label">
+                                Date of Birth
+                                <span class="form-required"> * </span>
+                            </label>
+
+                            <div class="form-input">
+                                @*@<input type="date" class="year" name="year" placeholder=" " class="expand" required>@*@
+                                @Html.EditorFor(model => model.DOB, new { htmlAttributes = new { @type = "date", @name = "DOB", @placeholder = " ", @required = " ", @class = "expand" } })
+
+                            </div>
+
+                        </li>
+                        <li>
+                            <label class="form-label">
+                                Mobile Number
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                                @*@<input type="text" name="mobile_number" placeholder="" required>@*@
+                                @Html.EditorFor(model => model.Mobile_no, new { htmlAttributes = new { @type = "text", @name = "mobile_number", @placeholder = "", @required = " " } })
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <label class="form-label">
+                                Qualification
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                                @*@<input type="text" name="mobile_number" placeholder="" required>@*@
+                                @Html.EditorFor(model => model.Qualification, new { htmlAttributes = new { @type = "text", @name = "qualification", @placeholder = "", @required = " " } })
+                            </div>
+                        </li>
+                        <li>
+                            <label class="form-label">
+                                YearOfCompletion
+                                <span class="form-required">*</span>
+                            </label>
+                            <div class="form-input">
+                                @*@<input type="Date" name="mobile_number" placeholder="" class="expand" required>@*@
+                                @Html.EditorFor(model => model.Year_of_Completion, new { htmlAttributes = new { @type = "date", @name = "year_of_completion", @placeholder = "", @required = " ", @class = "expand" } })
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

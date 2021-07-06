@@ -1,0 +1,108 @@
+﻿@model FarmerApp.FarmerReg
+
+@{
+    ViewBag.Title = "FarLogin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <style>
+        .card {
+            box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            background-color: #94b988;
+            height: 80%;
+            width: 50%;
+        }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+
+        .container {
+            padding: 2px 16px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>Farmer Login</h2>
+
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="card">
+
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+            </div>
+
+
+            @*<div>
+                    @Html.ActionLink("Index", "Farmerhome")
+                </div>*@
+
+
+            <br />
+
+            <div class="card">
+                <br />
+
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @* &nbsp; &nbsp;*@
+                <img src="~/carousel/farmer.jpg" height=80% width=40%>
+
+                <br />
+                <br />
+
+                <div class="form-group">
+                    @*<div class="card">*@
+                    @ViewBag.m
+                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-push-10">
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    @ViewBag.m1
+                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-push-10">
+                        @*@Html.PasswordFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })*@
+                        <input type="password" name="password" class="form-control" />
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-0">
+                        <input type="submit" value="Submit" class="btn btn-style btn-secondary btn-contact" />
+                        @ViewBag.m2
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <div class="title"> @Html.ActionLink("ForgotPassword?", "ForgotPasswordF")</div>
+                </div>
+
+
+
+            </div>
+
+                }
+</center>
+
+</body>
+</html>
+<div>@Html.ActionLink("Go Back", "Index")</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

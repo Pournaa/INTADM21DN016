@@ -1,0 +1,73 @@
+﻿@model BankOfIntern.Models.GetBranchDetails_Result
+@Session["uid"] 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="link1"> <h3>Branch Details</h3></div>
+
+    @*<a href="Logout.cshtml"><input type="button" value="Logout" class="submit"></a>*@
+    @{
+        string url = Url.Action("Logout", "Logout");
+    }
+    <input type="button" value="Logout" class="submit" onclick="window.location.href = '@url'" />
+    <div class="dropdown">
+        <button onclick="myFunc()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content" onclick="myFunc()">
+            @Html.ActionLink("Branch Details", "BranchDetails",  new { id =Session["uid"] } ) 
+            @Html.ActionLink("Account Statement", "AcStatement", new { id =Session["uid"] } ) 
+            @Html.ActionLink("Account Summary", "AcSummary",  new { id =Session["uid"] } )
+            @Html.ActionLink("Transactions", "Trans", "Transaction", new { id = Session["uid"] },new{ })
+         
+        </div>
+    </div>
+    <div class="contentx">
+
+        <table class="content" border="1">
+            <tr>
+                <td><b>  @Html.DisplayNameFor(model => model.BranchName)</b></td>&nbsp;
+                <td>  @Html.DisplayFor(model => model.BranchName)</td>
+
+            </tr>
+
+            <tr>
+                <td><b>  @Html.DisplayNameFor(model => model.City)</b></td>&nbsp;
+                <td>  @Html.DisplayFor(model => model.City)</td>
+
+            </tr>
+
+            <tr>
+                <td> <b> @Html.DisplayNameFor(model => model.IFSCCode)</b></td>&nbsp;
+                <td>  @Html.DisplayFor(model => model.IFSCCode)</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function myFunc() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.add('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+

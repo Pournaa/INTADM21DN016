@@ -1,0 +1,86 @@
+﻿@model IEnumerable<FarmerApp.Bidding>
+
+@{ ViewBag.Title = "ViewBidding";
+                Layout = "~/Views/Shared/_Layout.cshtml"; }
+<br />
+<br />
+<!-- about breadcrumb -->
+<section class="w3l-about-breadcrumb text-left">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+        <div class="container">
+            <h2 class="title">View Bidding</h2>
+            <ul class="breadcrumbs-custom-path mt-2">
+                <li><a href="#url">Home</a></li>
+                <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> View Bidding </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<br />
+<br />
+<h2>View Bidding</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.SellRequest.Crop_type)*@
+            <label for="name">Crop Name</label>
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Crop_type)*@
+            <label for="name">Crop Type</label>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Baseprice)
+        </th>
+
+        <th>
+            @Html.ActionLink("Current Bid Amount", "ViewBidding", new { Sorting_Order = ViewBag.SortingName })
+        </th>
+
+        <th>
+            @*@Html.DisplayNameFor(model => model.BidderReg.Name)*@
+            <label for="name">Bidder Name</label>
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.SellRequest.Crop_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Crop_type)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Baseprice)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Current_Bid)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.BidderReg.Name)
+    </td>
+
+
+
+
+
+
+    <td>
+        @Html.ActionLink("Approve Bidding", "ApproveBidding", new { id = item.BiddingID })|
+
+        @Html.ActionLink("Reject", "RejectBidding", new { id = item.BiddingID })
+
+        @* @Html.ActionLink("Delete", "Delete", new { id = item.BiddingID })*@
+    </td>
+</tr>}
+
+</table>
+<td>
+    @Html.ActionLink("Go Back", "Index")
+</td>

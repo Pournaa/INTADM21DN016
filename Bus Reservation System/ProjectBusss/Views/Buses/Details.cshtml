@@ -1,0 +1,42 @@
+﻿@model ProjectBusss.Models.Bus
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bus</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BusName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type_AC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type_AC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type_Sleeper)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type_Sleeper)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BusId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

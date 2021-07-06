@@ -1,0 +1,167 @@
+using System;
+
+using System.Data.SqlClient;
+
+namespace MINIPROJECT
+{
+    class Program
+    {
+
+        static SqlConnection con;
+        static SqlDataReader dr;
+        SqlCommand cmd;
+        //  string connectiondetails = "\\INFCHSZA4124"
+        public SqlConnection getConnection()
+        {
+            con = new SqlConnection("data source=.;initial catalog=COSMETICSSALES;user id=sa;password=newuser123#");
+          con.Open();
+            return con;
+        }
+
+        
+        public void DataSelect()
+        {
+            con = getConnection();
+            cmd = new SqlCommand("select * from PRODUCT", con);
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Console.WriteLine("product_id :" + dr[0]);
+                Console.WriteLine();
+                Console.WriteLine("product_name: " + dr[1]);
+                Console.WriteLine();
+                Console.WriteLine("brand :" + dr[2]);
+                Console.WriteLine();
+                Console.WriteLine("stock :" + dr[3]);
+                Console.WriteLine();
+               // Console.WriteLine(" price  :" + dr[4]);
+            }
+            Console.Read();
+        }
+        
+       /*
+ public void DataInsert()
+{
+    con = getConnection();
+    Console.WriteLine("Please enter product_id, product_name, brand, stock for the PRODUCT");
+    int product_id = Convert.ToInt32(Console.ReadLine());
+    string product_name = Console.ReadLine();
+    string brand = Console.ReadLine();
+    int stock = Convert.ToInt32(Console.ReadLine());
+ //   int price = Convert.ToInt32(Console.ReadLine());
+            // cmd = new SqlCommand("insert int  PRODUCT values('20,'eyeliner','jovees',800));
+            cmd = new SqlCommand("insert into PRODUCT values(@product_id, @product_name, @brand, @stock)");
+    cmd.Parameters.AddWithValue("@product_id", product_id);
+    cmd.Parameters.AddWithValue("@product_name", product_name);
+    cmd.Parameters.AddWithValue("@brand", brand);
+    cmd.Parameters.AddWithValue("@stock", stock);
+   // cmd.Parameters.AddWithValue("@price", price);
+    cmd.Connection = con;
+    int rowcount = cmd.ExecuteNonQuery();
+    if (rowcount > 0)
+    {
+        Console.WriteLine("Successfully inserted");
+                Console.ReadLine();
+    }
+    else
+        Console.WriteLine("No data inserted");
+            Console.ReadLine();
+
+
+        }*/
+
+        /*
+         public void DeleteProc()
+         {
+             con = getConnection();
+             Console.WriteLine("Enter product_id");
+             string product_id = Console.ReadLine();
+             cmd = new SqlCommand("select * from PRODUCT where product_id=@product_id");
+             cmd.Parameters.AddWithValue("@product_id",product_id);
+             cmd.Connection = con;
+             dr = cmd.ExecuteReader();
+             while (dr.Read())
+             {
+                 for (int i = 0; i < dr.FieldCount; i++)
+                 {
+                     Console.WriteLine(dr[i]);
+                 }
+             }
+             con.Close();
+             Console.WriteLine("Are you sure to delete this DETAIL y/n");
+             string status = Console.ReadLine();
+             if (status == "y" || status == "Y")
+             {
+                 cmd = new SqlCommand("Delete PRODUCT Where product_id=@product_id", con);
+                 cmd.Parameters.AddWithValue("@productid", product_id);
+                 con.Open();
+                 cmd.ExecuteNonQuery();
+                 Console.WriteLine("Record Deleted Successfully");
+             }
+
+         }
+         /*
+         private void SelectProc()
+         {
+             con = getConnection();
+           Console.WriteLine("Please Enter the product_id ");
+           // int csvariable = Convert.ToInt32(Console.ReadLine());
+             cmd = new SqlCommand("select *  from PRODUCT ");
+        //     cmd = new SqlCommand("getselectedproduct_id", con);
+           //  cmd.CommandType = System.Data.CommandType.StoredProcedure;
+           //  cmd.Parameters.Add(new SqlParameter("@eid", csvariable));
+
+             dr = cmd.ExecuteReader();
+
+             while (dr.Read())
+             {
+                 //Console.WriteLine(dr[0]+" | "+dr[1]+" | "+dr[2]+" | "+dr[3]);
+                 Console.WriteLine("product_id is : " + dr[0]);
+                 Console.WriteLine("product_name is : " + dr[1]);
+                 Console.WriteLine("brand is : " + dr[2]);
+                 Console.WriteLine("stock is : " + dr[4]);
+                 Console.WriteLine("price is : " + dr[5]);
+
+             }
+         }
+         */
+     /*   public void Update()
+        {
+            con = getConnection();
+           
+            Console.WriteLine("Enter product_id");
+            int product_id = Convert.ToInt32(Console.ReadLine());
+            cmd = new SqlCommand("update PRODUCT set @brand = smashbox where product_id=@product_id", con);
+            cmd.Parameters.AddWithValue("@stock", 64);
+            cmd.Connection = con;
+            dr = cmd.ExecuteReader();
+
+            try
+            {
+
+                cmd.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error:", ex);
+
+            }
+            finally
+            { 
+           }
+
+        }*/
+        static void Main(string[] args)
+        {
+            Program p = new Program();
+            //  p.DataSelect();
+            // p.DataInsert();
+            p.DataSelect();
+            // p.DeleteProc();
+            //  p.SelectProc();
+           // p.Update();
+            Console.Read();
+        }
+    }
+}

@@ -1,0 +1,106 @@
+﻿@model ProjectBusss.Models.Ticket
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ticket</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bus.BusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bus.BusName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Payment.paymentMode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Payment.paymentMode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Schedule.source)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Schedule.source)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateOfJourney)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateOfJourney)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.seatNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.seatNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.passengerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.passengerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emergencyContact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emergencyContact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.travelType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.travelType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    
+    @Html.ActionLink("Back to List", "Index")
+</p>

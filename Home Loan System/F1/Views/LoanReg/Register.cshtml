@@ -1,0 +1,89 @@
+﻿@model F1.Models.User_login
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+    <link href="~/Login/StyleSheet1.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <div class="Online-Exam" style="margin-top : 10%">
+        <div class="heading">
+            <h1>Registration</h1>
+        </div>
+        <div class="container">
+            <div class="agile-form">
+                <form action="Register" method="post">
+                    <ul class="field-list">
+                        <li>
+                            <label class="form-label">
+                                User Name
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                                @Html.EditorFor(model => model.User_Name, new { htmlAttributes = new { @type = "text", @name = "User_Name", @placeholder = " ", @required = " " } })
+                                <br />
+                                @Html.ValidationMessageFor(model => model.User_Name, "", new { @class = "text-danger" })
+                            </div>
+                        </li>
+                        <li>
+                            <label class="form-label">
+                                Email
+
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                                @Html.EditorFor(model => model.User_Email, new { htmlAttributes = new { @type = "email", @name = "User_Email", @placeholder = "", @required = " " } })
+                                <br />
+                                @Html.ValidationMessageFor(model => model.User_Email, "", new { @class = "text-danger" })
+                            </div>
+                        </li>
+                        <li>
+                            <label class="form-label">
+                                Password
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                               
+                                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @type = "password", @name = "Password", @placeholder = "", @required = " ", @class = "expand" } })
+                                <br />
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </li>
+
+                        <li>
+                            <label class="form-label">
+                                Confirm Password
+                                <span class="form-required"> * </span>
+                            </label>
+                            <div class="form-input">
+                                @Html.EditorFor(model => model.Confirm_Password, new { htmlAttributes = new { @type = "password", @name = "Confirm_Password", @placeholder = "", @required = " ", @class = "expand" } })
+                                <br />
+                                @Html.ValidationMessageFor(model => model.Confirm_Password, "", new { @class = "text-danger" })
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

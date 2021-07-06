@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="D1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Admin_login">
+          <Key>
+            <PropertyRef Name="Admin_Id" />
+          </Key>
+          <Property Name="Admin_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Admin_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Admin_Email" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Confirm_Password" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="MVCregUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="F_name" Type="varchar" MaxLength="20" />
+          <Property Name="L_name" Type="varchar" MaxLength="20" />
+          <Property Name="MobileNo" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Dob" Type="datetime" />
+          <Property Name="Address1" Type="varchar" MaxLength="80" />
+          <Property Name="Address2" Type="varchar" MaxLength="80" />
+          <Property Name="City" Type="varchar" MaxLength="25" />
+          <Property Name="State" Type="varchar" MaxLength="50" />
+          <Property Name="Country" Type="varchar" MaxLength="25" />
+          <Property Name="Pincode" Type="numeric" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="occupation_table">
+          <Key>
+            <PropertyRef Name="Occ_ID" />
+          </Key>
+          <Property Name="Occ_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID" Type="int" />
+          <Property Name="Occ_type" Type="varchar" MaxLength="50" />
+          <Property Name="Designation" Type="varchar" MaxLength="80" />
+          <Property Name="Gross_income" Type="bigint" />
+          <Property Name="Adharcard_No" Type="bigint" />
+          <Property Name="Pancard_No" Type="nvarchar" MaxLength="20" />
+          <Property Name="Loan_amount" Type="bigint" />
+          <Property Name="Tensure" Type="int" />
+        </EntityType>
+        <EntityType Name="User_login">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_Name" Type="varchar" MaxLength="50" />
+          <Property Name="User_Email" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Confirm_Password" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK__occupation_t__ID__29572725">
+          <End Role="MVCregUser" Type="Self.MVCregUser" Multiplicity="0..1" />
+          <End Role="occupation_table" Type="Self.occupation_table" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MVCregUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="occupation_table">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="D2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="loantrackeredit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="MobileNo" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="LoginCheck" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="User_Name" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="tracker3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="tracker4" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="D1ModelStoreContainer">
+          <EntitySet Name="Admin_login" EntityType="Self.Admin_login" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MVCregUser" EntityType="Self.MVCregUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="occupation_table" EntityType="Self.occupation_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User_login" EntityType="Self.User_login" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__occupation_t__ID__29572725" Association="Self.FK__occupation_t__ID__29572725">
+            <End Role="MVCregUser" EntitySet="MVCregUser" />
+            <End Role="occupation_table" EntitySet="occupation_table" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="D1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Admin_login">
+          <Key>
+            <PropertyRef Name="Admin_Id" />
+          </Key>
+          <Property Name="Admin_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Admin_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Confirm_Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="MVCregUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="F_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="L_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MobileNo" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Dob" Type="DateTime" Precision="3" />
+          <Property Name="Address1" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="Address2" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Country" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="Pincode" Type="Decimal" Precision="18" Scale="0" />
+          <NavigationProperty Name="occupation_table" Relationship="Self.FK__occupation_t__ID__29572725" FromRole="MVCregUser" ToRole="occupation_table" />
+        </EntityType>
+        <EntityType Name="occupation_table">
+          <Key>
+            <PropertyRef Name="Occ_ID" />
+          </Key>
+          <Property Name="Occ_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" />
+          <Property Name="Occ_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Designation" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="Gross_income" Type="Int64" />
+          <Property Name="Adharcard_No" Type="Int64" />
+          <Property Name="Pancard_No" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Loan_amount" Type="Int64" />
+          <Property Name="Tensure" Type="Int32" />
+          <NavigationProperty Name="MVCregUser" Relationship="Self.FK__occupation_t__ID__29572725" FromRole="occupation_table" ToRole="MVCregUser" />
+        </EntityType>
+        <EntityType Name="User_login">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="User_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Confirm_Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK__occupation_t__ID__29572725">
+          <End Role="MVCregUser" Type="Self.MVCregUser" Multiplicity="0..1" />
+          <End Role="occupation_table" Type="Self.occupation_table" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MVCregUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="occupation_table">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="D1Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Admin_login" EntityType="Self.Admin_login" />
+          <EntitySet Name="MVCregUsers" EntityType="Self.MVCregUser" />
+          <EntitySet Name="occupation_table" EntityType="Self.occupation_table" />
+          <EntitySet Name="User_login" EntityType="Self.User_login" />
+          <AssociationSet Name="FK__occupation_t__ID__29572725" Association="Self.FK__occupation_t__ID__29572725">
+            <End Role="MVCregUser" EntitySet="MVCregUsers" />
+            <End Role="occupation_table" EntitySet="occupation_table" />
+          </AssociationSet>
+          <FunctionImport Name="D2" ReturnType="Collection(D1Model.D2_Result)" />
+          <FunctionImport Name="LoginCheck" ReturnType="Collection(Int32)">
+            <Parameter Name="User_Name" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="tracker3" ReturnType="Collection(D1Model.tracker3_Result)">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="tracker4" ReturnType="Collection(D1Model.tracker4_Result)">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="loantrackeredit" ReturnType="Collection(D1Model.loantrackeredit_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="MobileNo" Mode="In" Type="Decimal" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="D2_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="F_name" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="L_name" Nullable="true" MaxLength="20" />
+          <Property Type="Decimal" Name="MobileNo" Nullable="true" Precision="18" Scale="0" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="Dob" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Address1" Nullable="true" MaxLength="80" />
+          <Property Type="String" Name="Address2" Nullable="true" MaxLength="80" />
+          <Property Type="String" Name="City" Nullable="true" MaxLength="25" />
+          <Property Type="String" Name="State" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Country" Nullable="true" MaxLength="25" />
+          <Property Type="Decimal" Name="Pincode" Nullable="true" Precision="18" Scale="0" />
+        </ComplexType>
+        <ComplexType Name="tracker3_Result">
+          <Property Type="Int32" Name="Age" Nullable="true" />
+          <Property Type="Int64" Name="Gross_income" Nullable="true" />
+          <Property Type="Int64" Name="Loan_amount" Nullable="true" />
+          <Property Type="Int32" Name="Tensure" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="tracker4_Result">
+          <Property Type="Int32" Name="Age" Nullable="true" />
+          <Property Type="Int64" Name="Gross_income" Nullable="true" />
+          <Property Type="Int64" Name="Loan_amount" Nullable="true" />
+          <Property Type="Int32" Name="Tensure" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="loantrackeredit_Result">
+          <Property Type="Int32" Name="Age" Nullable="true" />
+          <Property Type="Int64" Name="Gross_income" Nullable="true" />
+          <Property Type="Int64" Name="Loan_amount" Nullable="true" />
+          <Property Type="Int32" Name="Tensure" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="D1ModelStoreContainer" CdmEntityContainer="D1Entities">
+          <EntitySetMapping Name="Admin_login">
+            <EntityTypeMapping TypeName="D1Model.Admin_login">
+              <MappingFragment StoreEntitySet="Admin_login">
+                <ScalarProperty Name="Admin_Id" ColumnName="Admin_Id" />
+                <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+                <ScalarProperty Name="Admin_Email" ColumnName="Admin_Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Confirm_Password" ColumnName="Confirm_Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MVCregUsers">
+            <EntityTypeMapping TypeName="D1Model.MVCregUser">
+              <MappingFragment StoreEntitySet="MVCregUser">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="F_name" ColumnName="F_name" />
+                <ScalarProperty Name="L_name" ColumnName="L_name" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Dob" ColumnName="Dob" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="occupation_table">
+            <EntityTypeMapping TypeName="D1Model.occupation_table">
+              <MappingFragment StoreEntitySet="occupation_table">
+                <ScalarProperty Name="Occ_ID" ColumnName="Occ_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Occ_type" ColumnName="Occ_type" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="Gross_income" ColumnName="Gross_income" />
+                <ScalarProperty Name="Adharcard_No" ColumnName="Adharcard_No" />
+                <ScalarProperty Name="Pancard_No" ColumnName="Pancard_No" />
+                <ScalarProperty Name="Loan_amount" ColumnName="Loan_amount" />
+                <ScalarProperty Name="Tensure" ColumnName="Tensure" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User_login">
+            <EntityTypeMapping TypeName="D1Model.User_login">
+              <MappingFragment StoreEntitySet="User_login">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+                <ScalarProperty Name="User_Email" ColumnName="User_Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Confirm_Password" ColumnName="Confirm_Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="D2" FunctionName="D1Model.Store.D2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="D1Model.D2_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="F_name" ColumnName="F_name" />
+                <ScalarProperty Name="L_name" ColumnName="L_name" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Dob" ColumnName="Dob" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="LoginCheck" FunctionName="D1Model.Store.LoginCheck" />
+          <FunctionImportMapping FunctionImportName="tracker3" FunctionName="D1Model.Store.tracker3">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="D1Model.tracker3_Result">
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Gross_income" ColumnName="Gross_income" />
+                <ScalarProperty Name="Loan_amount" ColumnName="Loan_amount" />
+                <ScalarProperty Name="Tensure" ColumnName="Tensure" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="tracker4" FunctionName="D1Model.Store.tracker4">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="D1Model.tracker4_Result">
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Gross_income" ColumnName="Gross_income" />
+                <ScalarProperty Name="Loan_amount" ColumnName="Loan_amount" />
+                <ScalarProperty Name="Tensure" ColumnName="Tensure" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="loantrackeredit" FunctionName="D1Model.Store.loantrackeredit">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="D1Model.loantrackeredit_Result">
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Gross_income" ColumnName="Gross_income" />
+                <ScalarProperty Name="Loan_amount" ColumnName="Loan_amount" />
+                <ScalarProperty Name="Tensure" ColumnName="Tensure" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

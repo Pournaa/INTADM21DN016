@@ -1,0 +1,102 @@
+﻿@model BankOfIntern.Models.ViewUserDetails_Result
+
+<head>
+    @Styles.Render("~/Content/cse")
+</head>
+<br /><br />
+<div class="link1"> <h3>Customer profile</h3></div>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PAN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PAN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aadhar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aadhar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Occupation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occupation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Income)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Income)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Residential_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Residential_Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Permanent_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Permanent_Address)
+        </dd>
+
+    </dl>
+</div>
+
+@ViewBag.Message

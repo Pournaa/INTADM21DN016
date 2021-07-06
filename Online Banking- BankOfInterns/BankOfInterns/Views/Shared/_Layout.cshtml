@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    
+        <script>
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onload = function () { null };
+        </script>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        @Styles.Render("~/Content/csd")
+    </head>
+    <body>
+        <div class="header1">
+
+            @Html.ActionLink("Bank of Interns", "Index", "Home", null, new { @class = "header1", style = "color:rgb(198,199,198);text-decoration:none;text-align: left;font-weight:bold;font-size:30px; padding-top:20px;" })
+        </div>
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer class="footer">
+                <p>
+                    bankofinterns@gmail.com&nbsp;&nbsp;
+                    <br />
+                    &copy;Bank Of Interns&nbsp;&nbsp;
+                    Singanallur,Coimbatore&nbsp;&nbsp;
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
+

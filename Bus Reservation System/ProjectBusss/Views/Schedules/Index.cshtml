@@ -1,0 +1,141 @@
+﻿@model IEnumerable<ProjectBusss.Models.Schedule>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Bus.BusName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.source)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sourceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dest)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.destId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.scheduleDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.depatureTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.arrivalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.arrivalTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AC_SleeperSeats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NonAC_SleeperSeats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACSemi_SleeperSeats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NonACSemi_SleeperSeats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.costAC_Sleeper)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.costNonAC_Sleeper)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.costACSemi_Sleeper)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.costNonACSemi_Sleeper)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.travelType)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bus.BusName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.source)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sourceId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dest)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.destId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.scheduleDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.depatureTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.arrivalDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.arrivalTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AC_SleeperSeats)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NonAC_SleeperSeats)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACSemi_SleeperSeats)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NonACSemi_SleeperSeats)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.costAC_Sleeper)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.costNonAC_Sleeper)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.costACSemi_Sleeper)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.costNonACSemi_Sleeper)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.travelType)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.scheduleId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.scheduleId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.scheduleId })
+        </td>
+    </tr>
+}
+
+</table>

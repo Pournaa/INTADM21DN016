@@ -1,0 +1,134 @@
+﻿@model BankOfIntern.Models.EnterAccNo
+
+@{ ViewBag.Title = "EnterAccNo"; }
+
+
+
+
+@using (Html.BeginForm("EnterAccNo", "Transaction", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h3>Enter your Account Number</h3>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AccNo)
+                @Html.ValidationMessageFor(model => model.AccNo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group-2">
+            <label class="error">@Html.DisplayFor(model => model.AccNoErrorMsg)</label>
+        </div>
+
+        <div class="form-group-1">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit" class="btn btn-default" style="background-color: white; border: none; color: black; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; margin-top:10%; cursor: pointer; border-radius: 16px; width: 40%; margin-left: 100px"; />
+            </div>
+        </div>
+
+
+    </div>}
+
+@*@section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@
+
+
+<style>
+    .form-horizontal {
+        box-shadow: 0 6px 43px 0 rgba(0, 0, 0, 0.4);
+        border-radius: 2px 2px 2px 2px;
+        margin: auto;
+        max-width: 300px;
+        height: 200px;
+        padding: 100px;
+        background: #343434;
+        font-size: 20px;
+        background-size: 24px;
+        margin-top: 100px;
+        color: white;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 25px;
+        text-align: left;
+        background-color: rgb(237 231 237 / 0.16);
+        border: 0;
+        border-left: 2px solid #00c6d7;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        color: #fff;
+        outline: 0;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 13px;
+    }
+
+    /*.form-group-1 input {
+        background-color: cornflowerblue;
+        border: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 6px 2px 20px 0px;
+        cursor: pointer;
+        border-radius: 16px;
+        width: 135%;
+        margin-left: -54.5px;
+    }*/
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    header {
+        height: 90px;
+        background: #343434;
+        width: 100%;
+        z-index: 10;
+        position: fixed;
+        top: -10px;
+    }*/
+    h3 {
+        margin: 0 0 20px;
+        padding: 0;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgb(198,199,198);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    @*input[type=submit] {
+        background-color: rgb(198,199,198);
+        border: none;
+        color: #343434;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 50px;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 10%;
+        margin-right: 70%;
+    }
+
+    .button:hover {
+        background-color: #f1f1f1;
+    }*@
+</style>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FarmerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Admin_ID" />
+    </Key>
+    <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Adminapproval">
+    <Key>
+      <PropertyRef Name="Adminapp_ID" />
+    </Key>
+    <Property Name="Farmer_ID" Type="Int32" Nullable="false" />
+    <Property Name="Crop_ID" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Bidder_ID" Type="Int32" />
+    <Property Name="Adminapp_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="BidderReg" Relationship="Self.FK__Adminappr__Bidde__1BFD2C07" FromRole="Adminapproval" ToRole="BidderReg" />
+    <NavigationProperty Name="SellRequest" Relationship="Self.FK__Adminappr__Crop___1CF15040" FromRole="Adminapproval" ToRole="SellRequest" />
+    <NavigationProperty Name="FarmerReg" Relationship="Self.FK__Adminappr__Farme__1DE57479" FromRole="Adminapproval" ToRole="FarmerReg" />
+  </EntityType>
+  <EntityType Name="BidderReg">
+    <Key>
+      <PropertyRef Name="Bidder_ID" />
+    </Key>
+    <Property Name="Bidder_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contact_no" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pincode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AccountNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IFSC_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Aadhaar" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PAN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Trader_license" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Adminapprovals" Relationship="Self.FK__Adminappr__Bidde__1BFD2C07" FromRole="BidderReg" ToRole="Adminapproval" />
+    <NavigationProperty Name="Biddings" Relationship="Self.FK__Bidding__Bidder___1ED998B2" FromRole="BidderReg" ToRole="Bidding" />
+  </EntityType>
+  <EntityType Name="Bidding">
+    <Key>
+      <PropertyRef Name="BiddingID" />
+    </Key>
+    <Property Name="BiddingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Crop_ID" Type="Int32" Nullable="false" />
+    <Property Name="Crop_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Baseprice" Type="Double" Nullable="false" />
+    <Property Name="Current_Bid" Type="Double" Nullable="false" />
+    <Property Name="Bidder_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BidderReg" Relationship="Self.FK__Bidding__Bidder___1ED998B2" FromRole="Bidding" ToRole="BidderReg" />
+    <NavigationProperty Name="SellRequest" Relationship="Self.FK__Bidding__Crop_ID__1FCDBCEB" FromRole="Bidding" ToRole="SellRequest" />
+  </EntityType>
+  <EntityType Name="FarmerReg">
+    <Key>
+      <PropertyRef Name="Farmer_ID" />
+    </Key>
+    <Property Name="Farmer_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contact_no" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pincode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Area" Type="Double" Nullable="false" />
+    <Property Name="Land_Address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Land_Pincode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AccountNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IFSC_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Aadhaar" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PAN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Certificate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Adminapprovals" Relationship="Self.FK__Adminappr__Farme__1DE57479" FromRole="FarmerReg" ToRole="Adminapproval" />
+    <NavigationProperty Name="SellRequests" Relationship="Self.FK__SellReque__Farme__20C1E124" FromRole="FarmerReg" ToRole="SellRequest" />
+  </EntityType>
+  <EntityType Name="SellRequest">
+    <Key>
+      <PropertyRef Name="Crop_ID" />
+    </Key>
+    <Property Name="Crop_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Crop_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Crop_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fertilizer" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Quantity" Type="Double" Nullable="false" />
+    <Property Name="Soil_PH" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Baseprice" Type="Double" />
+    <Property Name="Farmer_ID" Type="Int32" />
+    <NavigationProperty Name="Adminapprovals" Relationship="Self.FK__Adminappr__Crop___1CF15040" FromRole="SellRequest" ToRole="Adminapproval" />
+    <NavigationProperty Name="Biddings" Relationship="Self.FK__Bidding__Crop_ID__1FCDBCEB" FromRole="SellRequest" ToRole="Bidding" />
+    <NavigationProperty Name="FarmerReg" Relationship="Self.FK__SellReque__Farme__20C1E124" FromRole="SellRequest" ToRole="FarmerReg" />
+    <NavigationProperty Name="Soldhistories" Relationship="Self.FK__Soldhisto__Crop___21B6055D" FromRole="SellRequest" ToRole="Soldhistory" />
+  </EntityType>
+  <EntityType Name="Soldhistory">
+    <Key>
+      <PropertyRef Name="Sold_ID" />
+    </Key>
+    <Property Name="Sold_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Crop_ID" Type="Int32" Nullable="false" />
+    <Property Name="Crop_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Quantity" Type="Double" Nullable="false" />
+    <Property Name="Baseprice" Type="Double" Nullable="false" />
+    <Property Name="Soldprice" Type="Double" Nullable="false" />
+    <Property Name="Totalprice" Type="Double" Nullable="false" />
+    <NavigationProperty Name="SellRequest" Relationship="Self.FK__Soldhisto__Crop___21B6055D" FromRole="Soldhistory" ToRole="SellRequest" />
+  </EntityType>
+  <Association Name="FK__Adminappr__Bidde__1BFD2C07">
+    <End Role="BidderReg" Type="Self.BidderReg" Multiplicity="0..1" />
+    <End Role="Adminapproval" Type="Self.Adminapproval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BidderReg">
+        <PropertyRef Name="Bidder_ID" />
+      </Principal>
+      <Dependent Role="Adminapproval">
+        <PropertyRef Name="Bidder_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adminappr__Crop___1CF15040">
+    <End Role="SellRequest" Type="Self.SellRequest" Multiplicity="1" />
+    <End Role="Adminapproval" Type="Self.Adminapproval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SellRequest">
+        <PropertyRef Name="Crop_ID" />
+      </Principal>
+      <Dependent Role="Adminapproval">
+        <PropertyRef Name="Crop_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adminappr__Farme__1DE57479">
+    <End Role="FarmerReg" Type="Self.FarmerReg" Multiplicity="1" />
+    <End Role="Adminapproval" Type="Self.Adminapproval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FarmerReg">
+        <PropertyRef Name="Farmer_ID" />
+      </Principal>
+      <Dependent Role="Adminapproval">
+        <PropertyRef Name="Farmer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bidding__Bidder___1ED998B2">
+    <End Role="BidderReg" Type="Self.BidderReg" Multiplicity="1" />
+    <End Role="Bidding" Type="Self.Bidding" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BidderReg">
+        <PropertyRef Name="Bidder_ID" />
+      </Principal>
+      <Dependent Role="Bidding">
+        <PropertyRef Name="Bidder_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bidding__Crop_ID__1FCDBCEB">
+    <End Role="SellRequest" Type="Self.SellRequest" Multiplicity="1" />
+    <End Role="Bidding" Type="Self.Bidding" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SellRequest">
+        <PropertyRef Name="Crop_ID" />
+      </Principal>
+      <Dependent Role="Bidding">
+        <PropertyRef Name="Crop_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SellReque__Farme__20C1E124">
+    <End Role="FarmerReg" Type="Self.FarmerReg" Multiplicity="0..1" />
+    <End Role="SellRequest" Type="Self.SellRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FarmerReg">
+        <PropertyRef Name="Farmer_ID" />
+      </Principal>
+      <Dependent Role="SellRequest">
+        <PropertyRef Name="Farmer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Soldhisto__Crop___21B6055D">
+    <End Role="SellRequest" Type="Self.SellRequest" Multiplicity="1" />
+    <End Role="Soldhistory" Type="Self.Soldhistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SellRequest">
+        <PropertyRef Name="Crop_ID" />
+      </Principal>
+      <Dependent Role="Soldhistory">
+        <PropertyRef Name="Crop_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FarmersEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admins" EntityType="Self.Admin" />
+    <EntitySet Name="Adminapprovals" EntityType="Self.Adminapproval" />
+    <EntitySet Name="BidderRegs" EntityType="Self.BidderReg" />
+    <EntitySet Name="Biddings" EntityType="Self.Bidding" />
+    <EntitySet Name="FarmerRegs" EntityType="Self.FarmerReg" />
+    <EntitySet Name="SellRequests" EntityType="Self.SellRequest" />
+    <EntitySet Name="Soldhistories" EntityType="Self.Soldhistory" />
+    <AssociationSet Name="FK__Adminappr__Bidde__1BFD2C07" Association="Self.FK__Adminappr__Bidde__1BFD2C07">
+      <End Role="BidderReg" EntitySet="BidderRegs" />
+      <End Role="Adminapproval" EntitySet="Adminapprovals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adminappr__Crop___1CF15040" Association="Self.FK__Adminappr__Crop___1CF15040">
+      <End Role="SellRequest" EntitySet="SellRequests" />
+      <End Role="Adminapproval" EntitySet="Adminapprovals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adminappr__Farme__1DE57479" Association="Self.FK__Adminappr__Farme__1DE57479">
+      <End Role="FarmerReg" EntitySet="FarmerRegs" />
+      <End Role="Adminapproval" EntitySet="Adminapprovals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bidding__Bidder___1ED998B2" Association="Self.FK__Bidding__Bidder___1ED998B2">
+      <End Role="BidderReg" EntitySet="BidderRegs" />
+      <End Role="Bidding" EntitySet="Biddings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bidding__Crop_ID__1FCDBCEB" Association="Self.FK__Bidding__Crop_ID__1FCDBCEB">
+      <End Role="SellRequest" EntitySet="SellRequests" />
+      <End Role="Bidding" EntitySet="Biddings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SellReque__Farme__20C1E124" Association="Self.FK__SellReque__Farme__20C1E124">
+      <End Role="FarmerReg" EntitySet="FarmerRegs" />
+      <End Role="SellRequest" EntitySet="SellRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Soldhisto__Crop___21B6055D" Association="Self.FK__Soldhisto__Crop___21B6055D">
+      <End Role="SellRequest" EntitySet="SellRequests" />
+      <End Role="Soldhistory" EntitySet="Soldhistories" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

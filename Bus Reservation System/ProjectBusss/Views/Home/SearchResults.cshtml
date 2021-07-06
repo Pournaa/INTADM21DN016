@@ -1,0 +1,178 @@
+﻿@model IEnumerable<ProjectBusss.Models.Schedule>
+
+@{ ViewBag.Title = "SearchResults"; }
+
+<h2>SearchResults</h2>
+<br />
+@ViewBag.ScheduleMessage
+<br />
+<h4>Source : @ViewBag.Source | Destination: @ViewBag.Dest </h4>
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Bus.BusName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.scheduleDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.depatureTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.arrivalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.arrivalTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th>
+            (AC_Sleeper) Available Seats | Cost
+        </th>
+        <th>
+            (NonAC_Sleeper) Available Seats | Cost
+        </th>
+        <th>
+            (ACSemi_Sleeper) Available Seats | Cost
+        </th>
+        <th>
+            (NonACSemi_Sleeper) Available Seats | Cost
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.travelType)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Bus.BusName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.scheduleDate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.depatureTime)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.arrivalDate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.arrivalTime)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.status)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.AC_SleeperSeats) |
+        @Html.DisplayFor(modelItem => item.costAC_Sleeper) |
+        @if (!item.scheduleDate.ToShortDateString().Contains(DateTime.Today.ToShortDateString()))
+        {
+            if (item.AC_SleeperSeats > 0)
+                {
+                    using (Html.BeginForm("Book", "Reservations", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.Hidden("sid", item.scheduleId)
+                        @Html.Hidden("fid", item.BusId)
+                        @Html.Hidden("doj", item.scheduleDate)
+                        @Html.Hidden("name", item.Bus.BusName)
+                        @Html.Hidden("Tclass", "AC_Sleeper")
+                    <input type="submit" value="Book" class="btn"/>
+                    }
+
+                }
+            }
+            else
+            {
+                <div>cannot book!!</div>
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NonAC_SleeperSeats) | 
+            @Html.DisplayFor(modelItem => item.costNonAC_Sleeper) | 
+            @if (!item.scheduleDate.ToShortDateString().Contains(DateTime.Today.ToShortDateString()))
+            {
+                if (item.NonAC_SleeperSeats > 0)
+                {
+                    using (Html.BeginForm("Book", "Reservations", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.Hidden("sid", item.scheduleId)
+                        @Html.Hidden("fid", item.BusId)
+                        @Html.Hidden("doj", item.scheduleDate)
+                        @Html.Hidden("name", item.Bus.BusName)
+                        @Html.Hidden("Tclass", "NonAC_Sleeper")
+                        <input type="submit" value="Book" class="btn" />
+                    }
+
+                }
+            }
+            else
+            {
+                <div>cannot book!!</div>
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACSemi_SleeperSeats) | 
+            @Html.DisplayFor(modelItem => item.costACSemi_Sleeper) | 
+            @if (!item.scheduleDate.ToShortDateString().Contains(DateTime.Today.ToShortDateString()))
+            {
+                if (item.ACSemi_SleeperSeats > 0)
+                {
+                    using (Html.BeginForm("Book", "Reservations", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.Hidden("sid", item.scheduleId)
+                        @Html.Hidden("fid", item.BusId)
+                        @Html.Hidden("doj", item.scheduleDate)
+                        @Html.Hidden("name", item.Bus.BusName)
+                        @Html.Hidden("Tclass", "ACSemi_Sleeper")
+                        <input type="submit" value="Book" class="btn" />
+                    }
+
+                }
+            }
+            else
+            {
+                <div>cannot book!!</div>
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NonACSemi_SleeperSeats) | 
+            @Html.DisplayFor(modelItem => item.costNonACSemi_Sleeper) | 
+            @if (!item.scheduleDate.ToShortDateString().Contains(DateTime.Today.ToShortDateString()))
+            {
+                if (item.NonACSemi_SleeperSeats > 0)
+                {
+                    using (Html.BeginForm("Book", "Reservations", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.Hidden("sid", item.scheduleId)
+                        @Html.Hidden("fid", item.BusId)
+                        @Html.Hidden("doj", item.scheduleDate)
+                        @Html.Hidden("name", item.Bus.BusName)
+                        @Html.Hidden("Tclass", "NonACSemi_Sleeper")
+                        <input type="submit" value="Book" class="btn" />
+                    }
+
+                }
+            }
+            else
+            {
+                <div>cannot book!!</div>
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.travelType)
+        </td>
+        @*<td>
+        @Html.ActionLink("Book", "Book", "Reservations", new { sid = item.scheduleId, fid = item.flightId, doj = item.scheduleDate, name = item.Flight.flightName }, null) }   
+        </td>*@
+    </tr>
+}
+
+</table>

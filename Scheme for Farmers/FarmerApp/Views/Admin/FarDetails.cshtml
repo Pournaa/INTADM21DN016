@@ -1,0 +1,217 @@
+﻿@model IEnumerable<FarmerApp.FarmerReg>
+
+@{ ViewBag.Title = "FarDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<br />
+<br />
+<!-- about breadcrumb -->
+<section class="w3l-about-breadcrumb text-left">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+        <div class="container">
+            <h2 class="title">Services</h2>
+            <ul class="breadcrumbs-custom-path mt-2">
+                <li><a href="#url">Home</a></li>
+                <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Farmers Details </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<br />
+<br />
+<br />
+<br />
+
+<h2>Farmer Details</h2>
+
+<table class="table">
+    <tr>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>*@
+        <th>
+            @Html.ActionLink("Name", "FarDetails", new { Sorting_Order = ViewBag.SortingName })
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Contact_no)*@
+            <label for="name">Contact Number</label>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Contact_no)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Email)
+    </td>
+
+</tr>}
+
+</table>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .collapsible {
+            background-color: #486b3e;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 20%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 12px;
+        }
+
+            .active, .collapsible:hover {
+                background-color: #555;
+            }
+
+            .collapsible:after {
+                content: '\002B';
+                color: white;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+
+    <button class="collapsible">More Details</button>
+    <div class="content">
+
+
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.State)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pincode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AccountNo)
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.IFSC_code)*@
+                    <label for="name">IFSC Code</label>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Aadhaar)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PAN)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Certificate)
+                </th>
+
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.Address)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.City)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.State)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Pincode)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.AccountNo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.IFSC_code)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Aadhaar)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PAN)
+    </td>
+    <td>
+        @if (item.Certificate != null)
+        {
+<img src="@Url.Content(item.Certificate)" height="100" width="100" />}
+    </td>
+    <td>
+        @Html.ActionLink("Delete", "FarDelete", new { id = item.Farmer_ID })
+        @*<button class="collapsible">More Details</button>*@
+    </td>
+
+</tr>}
+
+        </table>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
+<td>
+    @Html.ActionLink("Go Back", "Index")
+</td>

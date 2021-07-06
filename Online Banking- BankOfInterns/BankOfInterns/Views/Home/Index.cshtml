@@ -1,0 +1,244 @@
+﻿@{ ViewBag.Title = "Bank Of Intern";
+                Layout = null; }
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Of Interns</title>
+    @*
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    *@
+
+</head>
+<body>
+    <div class="box-area">
+        @*<header>
+                <div class="wrapper">
+                    <div class="logo">
+                        <a href="#">Bank Of Interns</a>
+                    </div>
+                </div>
+            </header>*@
+        <div class="header1">
+            <img src="~/Images/BOILogo.png">
+            @Html.ActionLink("Bank of Interns", "Index", "Home", null, new { @class = "header1", style = "color:rgb(198,199,198);text-decoration:none;text-align: left;font-weight:bold;font-size:30px; padding-top:20px;" })
+        </div>
+
+        <div class="banner-area">
+            <div class="welcome-text">
+                <a href="~/Login/Login">Login</a>
+                <a href="~/NewAcc/AccOpen">Create Account</a>
+            </div>
+            <h2>Banking at your ease !</h2>
+        </div>
+        <div class="content-area">
+            <div class="container-1">
+                <div class="content-1">
+                    <br>
+                    <h1>Get transactions done instantly </h1>
+                    <p>Experience the royalty of banking at your fingertips, <br> Get an account now.</p>
+                </div>
+                <img src="~/Images/BOILogo.png">
+                <div class="container-2">
+                    <div class="img_2">
+                        <img src="~/Images/Aboutus.jpg">
+                    </div>
+                    <div class="content-2">
+                        <h1> ABOUT US :</h1>
+                        <h4> Welcome to Bank of Interns, Ideal destination for Personal Banking need! We offer wide range of consumer banking services like savings account, net banking and much more</h4>
+                    </div>
+                </div>
+                @*<div class="footer">
+                        <p>
+                            Email: bankofinterns@gmail.com
+                            Address: Singanallur, Coimbatore<br>
+                            &copy; BankOfInterns
+                        </p>
+                    </div>*@
+                <footer class="footer">
+                    <p>
+                        bankofinterns@gmail.com&nbsp;&nbsp;
+                        <br />
+                        &copy;Bank Of Interns&nbsp;&nbsp;
+                        Singanallur,Coimbatore&nbsp;&nbsp;
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        text-align: center;
+        background-color: rgb(198,199,198);
+    }
+
+    .wrapper {
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+    /*header {
+        
+        /*height: 90px;
+        background: #262626;
+        z-index: 10;*/
+        /*position: fixed;
+        height: 15%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: #343434;
+        color: white;
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        padding-left:10px;
+
+    }
+
+    .logo {
+        width: 30%;
+        float: left;
+        line-height: 100px;
+
+    }
+
+        .logo a {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight:bold;
+            letter-spacing: 5px;
+            color: rgb(198,199,198);
+            font-family: 'Roboto', sans serif;
+            text-transform: uppercase;
+            text-align: left;
+        }*/
+    .banner-area {
+        width: 100%;
+        height: 600px;
+        position: fixed;
+        top: 90px;
+        background-image: url("https://image.shutterstock.com/image-photo/black-wall-texture-rough-background-260nw-1450341161.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .banner-area h2 {
+        padding-top: 8%;
+        font-size: 60px;
+        font-family: poppins;
+        color: rgb(255, 255, 255);
+    }
+
+    .content-area {
+        width: 100%;
+        position: relative;
+        top: 450px;
+        background: rgb(230, 235, 210);
+        height: 1100px;
+    }
+
+        .content-area h2 {
+            font-family: Roboto;
+            letter-spacing: 4px;
+            padding-top: 30px;
+            font-size: 40px;
+            margin: 0;
+        }
+
+        .content-area p {
+            padding: 2% 0px;
+            font-family: poppins;
+            line-height: 30px;
+        }
+
+    .content-1 h1 {
+        color: red;
+    }
+
+    .container-2 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        box-sizing: border-box;
+        background: rgb(250, 211, 37);
+        border-radius: 4px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .welcome-text {
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        margin: 20% 30%;
+        text-align: center;
+        padding: 20px;
+    }
+
+        .welcome-text a {
+            background-color: black;
+            border: none;
+            color: rgb(228, 222, 222);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 16px;
+        }
+
+            .welcome-text a:hover {
+                background-color: #968d8d;
+            }
+    /*
+    .footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #262626;
+        color: white;
+        text-align: center;
+    }*/
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #343434;
+        color: white;
+        text-align: center;
+        height: 15%;
+    }
+
+    .header1 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 15%;
+        text-transform: uppercase;
+        background-image: url("~/Content/Images/BOILogo.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: contain;
+        background-color: #343434;
+        color: white;
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        padding-left: 150px;
+    }
+</style>

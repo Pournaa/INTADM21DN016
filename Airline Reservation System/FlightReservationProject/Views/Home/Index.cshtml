@@ -1,0 +1,95 @@
+﻿@model FlightReservationProject.Models.Schedule
+@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    img {
+        opacity: 0.5;
+    }
+</style>
+<div class="jumbotron jumbotron-fluid">
+    <h1>Flight Reservation System</h1>
+    <p class="lead">Book Flights for lowest costs and enjoy your journey </p>
+
+</div>
+@if (User.Identity.Name.Contains("lisasri25@gmail.com"))
+{
+    <h5>
+        @Html.ActionLink("Modify Schedule", "Index", "Schedules")
+        <br />
+        @Html.ActionLink("Modify flights Information", "Index", "Flights")
+        <br />
+        @Html.ActionLink("View Feedbacks", "Index", "Feedbacks")
+    </h5>}
+<div class="row">
+    <div class="col-md-4">
+        <h2>Search for Flights:</h2>
+        <br />
+        @using (Html.BeginForm("SearchResults", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            <fieldset>
+                <div class="form-group">
+                    <label class="col-md-2">Source: </label>
+                    <div class="col-md-10">
+                        @Html.DropDownList("source", null, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.source, "", new { @class = "text-danger" })
+                        <br />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2">Destination: </label>
+                    <div class="col-md-10">
+                        @Html.DropDownList("dest", null, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.dest, "", new { @class = "text-danger" })
+                        <br />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2">Date of Journey: </label>
+                    <div class="col-md-10">
+                        <input type="date" id ="ValidityDate"name="dateOfJourney" class="form-control" />
+                        @Html.ValidationMessageFor(model => model.scheduleDate, "", new { @class = "text-danger" })
+                        <br />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" class="btn btn-primary" value="Search" />
+                    </div>
+                </div>
+            </fieldset>}
+
+    </div>
+    <div class="col-md-4">
+        <button class="btn btn-info"> @Html.ActionLink("Booking History", "Index", "Reservations")</button><br /><br />
+
+        <img src="~/Content/birdsdoitpas.jpg" height="300" width="500">
+
+    </div>
+</div>
+<script type="text/javascript">
+    jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+    });
+    $('#ValidityDate').datetimepicker();
+    $("#myform").validate({
+        rules: {
+            scheduleDate: {
+                required: true
+            }
+        }
+    });
+    $("#ValidityDate").rules("add", {
+        required: true,
+        minlength: 2,
+        messages: {
+            required: "The Validity Date is mandatory!",
+        }
+    });
+</script>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

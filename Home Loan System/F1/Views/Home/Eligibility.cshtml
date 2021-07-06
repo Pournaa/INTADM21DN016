@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Eligibility";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Home Loan Eligibility Calculator</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Calculator/style.css" type="text/css">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+</head>
+</head>
+<body background="~/Calculator/eligibility.jpg" width="1300" height="800">
+
+
+
+    <div style="display: flex;margin-top: 4%;">
+
+        <div class="col-sm-6 col-12 card" style="box-shadow: none;">
+            <H1 style="line-height: 1.8;">Loan Eligibility Calculator</H1>
+            <form name="loan-form">
+                <div class='loanBlock'>
+                    <h3 style="line-height: 1.8;">Monthly Income</h3>
+                    <input type=number id="income" style="border-radius:5px line-height: 1.6 margin-left:0 margin-right:0;"><br>
+                </div>
+                <div class='loanBlock'>
+                    <h3 style="line-height: 1.8;">Loan Amount</h3>
+                    <input type=number id="amount" style="border-radius:5px line-height: 1.6;"><br>
+                </div>
+                <div class='aprBlock'>
+                    <h3 style="line-height: 1.8;">Interest Rate</h3>
+                    <input type="number" name="apr" id="apr" style="border-radius:5px line-height: 1.6;"><br>
+                </div>
+                <div class='tenureBlock'>
+                    <h3 style="line-height: 1.8;">Time Periods(yrs)</h3>
+                    <input type=number name="tenure" id="tenure" style="border-radius:5px line-height: 1.6;"><br>
+                    <br>
+                </div>
+                <div class='tenureBlock'>
+                    <br>
+                </div>
+                <div class="d-flex">
+                    <button style="border-radius:2px" id="find" class="btn-sub">Calculate Eligibility</button>
+                </div>
+            </form>
+
+
+
+        </div>
+        <div class="col-sm-5 col-12pl-3 card" style="box-shadow: none; margin-left: 40px;">
+
+            <h1 style="line-height: 2.0;">Results</h1><br />
+            <h3 style="line-height: 1.8;">Total EMI:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="emi"></span></h3>
+            <h3 style="line-height: 1.8;">Total Amount: &nbsp;&nbsp;&nbsp;&nbsp;<span id="totalAmt"></span></h3>
+            <h3 style="line-height: 1.8;">Loan Eligibility:&nbsp;&nbsp;&nbsp;&nbsp;<span id="totalEligible"></span></h3>
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+
+        </div>
+    </div>
+
+   
+  
+
+  
+    </div>
+
+    </div>
+
+
+    </div>
+    <script src='~/Calculator/eligibility.js'></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous"></script>

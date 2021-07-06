@@ -1,0 +1,116 @@
+﻿@model IEnumerable<FlightReservationProject.Models.Schedule>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Add Schedule fo Flight", "Create")
+</p>
+<table class="table table-hover" >
+    <tr class="table-active">
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.Flight.flightName)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.source)
+        </th>
+
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.dest)
+        </th>
+
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.scheduleDate)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.depatureTime)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.arrivalDate)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.arrivalTime)
+        </th>
+
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.FCseats)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.BCseats)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.ECseats)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.costFirst)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.costBusiness)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.costEconomy)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.traveltype)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="table-active">
+            <td>
+                @Html.DisplayFor(modelItem => item.Flight.flightName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.source)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dest)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.scheduleDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.depatureTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.arrivalDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.arrivalTime)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.FCseats)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BCseats)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ECseats)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.costFirst)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.costBusiness)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.costEconomy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.traveltype)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.scheduleId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.scheduleId })
+            </td>
+        </tr>
+    }
+
+</table>
